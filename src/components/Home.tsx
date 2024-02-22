@@ -1,4 +1,15 @@
-import { Grid, Typography, Button, Card, CardContent } from '@mui/material';
+import {
+  Grid,
+  Typography,
+  Button,
+  Card,
+  CardContent,
+  IconButton,
+} from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+// import AppsIcon from '@mui/icons-material/Apps';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Home = () => {
   const skills = [
@@ -38,6 +49,40 @@ const Home = () => {
           worked with agile software teams I am both results-oriented and
           delivery minded.
         </Typography>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Grid container>
+          <IconButton
+            aria-label="GitHub"
+            href="https://github.com/mfmafkar"
+            target="_blank"
+          >
+            <GitHubIcon />
+          </IconButton>
+          <IconButton
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/afkar-fasehudeen-9316b9160/"
+            target="_blank"
+          >
+            <LinkedInIcon />
+          </IconButton>
+          {/* TODO ::: no medium articles yet  ... */}
+          {/* <IconButton
+            aria-label="Medium"
+            href="https://medium.com/@mfmafkar"
+            target="_blank"
+          >
+            <AppsIcon />
+          </IconButton> */}
+          <IconButton
+            aria-label="Twitter"
+            href="https://twitter.com/mfmafkar"
+            target="_blank"
+          >
+            <TwitterIcon />
+          </IconButton>
+        </Grid>
       </Grid>
       <Grid item xs={12}>
         <Button
