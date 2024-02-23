@@ -11,6 +11,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
+type Skill = {
+  title: string;
+  description: string;
+};
+
+type Project = {
+  title: string;
+  description: string;
+};
+
+type ProjectsProps = {
+  projects: Project[];
+};
+
+type SkillsProps = {
+  skills: Skill[];
+};
+
 const Profile = () => {
   return (
     <Grid item xs={12}>
@@ -108,7 +126,7 @@ const SocialLinks = () => {
 //   );
 // };
 
-const Skills = ({ skills }) => {
+const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
     <Grid item xs={12}>
       <Typography variant="h4" gutterBottom>
@@ -116,7 +134,7 @@ const Skills = ({ skills }) => {
       </Typography>
       <Grid container spacing={2}>
         {/* Skills Cards */}
-        {skills.map((skill, index) => (
+        {skills.map((skill: Skill, index: number) => (
           <Grid item xs={12} sm={6} md={3} key={index}>
             <Card>
               <CardContent>
@@ -131,7 +149,7 @@ const Skills = ({ skills }) => {
   );
 };
 
-const Projects = ({ projects }) => {
+const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
     <Grid item xs={12}>
       <Typography variant="h4" gutterBottom>
@@ -139,7 +157,7 @@ const Projects = ({ projects }) => {
       </Typography>
       <Grid container spacing={2}>
         {/* Projects Cards */}
-        {projects.map((project, index) => (
+        {projects.map((project: Project, index: number) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card>
               <CardContent>
@@ -155,7 +173,7 @@ const Projects = ({ projects }) => {
 };
 
 const Home = () => {
-  const skills = [
+  const skills: Skill[] = [
     { title: 'JavaScript', description: 'Proficient in modern JS frameworks' },
     { title: 'React', description: 'Experience in building SPA with React' },
     { title: 'Node.js', description: 'Backend development using Node.js' },
@@ -165,7 +183,7 @@ const Home = () => {
     },
   ];
 
-  const projects = [
+  const projects: Project[] = [
     { title: 'Project 1', description: 'Description of Project 1' },
     { title: 'Project 2', description: 'Description of Project 2' },
     { title: 'Project 3', description: 'Description of Project 3' },
