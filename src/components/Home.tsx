@@ -1,15 +1,22 @@
+import React, { useState } from 'react';
 import {
   Grid,
   Typography,
-  // Button,
   Card,
   CardContent,
   IconButton,
   Box,
 } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
+
+// TODO
+// 1.Need to remove the usage of material UI GRID
+// 2.Need to break in simple components
+// 3.Need to move types to seperate file
+// 4.Need to refactor the code further
 
 type Skill = {
   title: string;
@@ -111,21 +118,6 @@ const SocialLinks = () => {
   );
 };
 
-// const ContactButton = () => {
-//   const handleContactClick = () => {
-//     window.location.href = 'mailto:mfmafkar@gmail.com';
-//   };
-
-//   return (
-//     <Grid item xs={12}>
-//       {/* Contact Button */}
-//       <Button variant="contained" color="primary" onClick={handleContactClick}>
-//         Contact Me
-//       </Button>
-//     </Grid>
-//   );
-// };
-
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
     <Grid item xs={12}>
@@ -173,6 +165,8 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 };
 
 const Home = () => {
+  const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
+
   const skills: Skill[] = [
     { title: 'JavaScript', description: 'Proficient in modern JS frameworks' },
     { title: 'React', description: 'Experience in building SPA with React' },
@@ -189,8 +183,35 @@ const Home = () => {
     { title: 'Project 3', description: 'Description of Project 3' },
   ];
 
+  const handleCloseBanner = () => {
+    setShowUnderDevelopment(false);
+  };
+
   return (
     <Grid container spacing={4}>
+      {/* Under Development Banner */}
+      {showUnderDevelopment && (
+        <Grid item xs={12}>
+          <Box
+            sx={{
+              backgroundColor: '#dd1406',
+              color: '#fff',
+              padding: '10px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}
+          >
+            <Typography variant="body1">
+              This site is currently under development.
+            </Typography>
+            <IconButton aria-label="Close" onClick={handleCloseBanner}>
+              <CloseIcon />
+            </IconButton>
+          </Box>
+        </Grid>
+      )}
+
       {/* Profile Component */}
       <Profile />
 
