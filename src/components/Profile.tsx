@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import SocialLinks from './SocialLinks';
 
+// TODO :: this component is not responsive ...
 const Profile = () => {
   return (
     <Box>

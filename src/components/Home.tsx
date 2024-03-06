@@ -31,6 +31,7 @@ const Home = () => {
   };
 
   return (
+    // TODO :: banner is not responsive ...
     <Box>
       {/* Under Development Banner */}
       {showUnderDevelopment && (
@@ -43,6 +44,7 @@ const Home = () => {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
+              width: '100%',
             }}
           >
             <Typography variant="body1">
