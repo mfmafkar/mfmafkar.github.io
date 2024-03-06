@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import {
+  Box,
   Grid,
   Typography,
   Card,
   CardContent,
   IconButton,
-  Box,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -38,14 +38,14 @@ type SkillsProps = {
 
 const Profile = () => {
   return (
-    <Grid item xs={12}>
+    <Box>
       {/* Profile Picture */}
       <Box
         sx={{
           display: 'flex',
           flexDirection: 'row',
-          // backgroundColor: 'yellow',
           justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <Box>
@@ -83,14 +83,14 @@ const Profile = () => {
         to design, development, and finally production. Having worked with agile
         software teams I am both results-oriented and delivery minded.
       </Typography>
-    </Grid>
+    </Box>
   );
 };
 
 const SocialLinks = () => {
   return (
-    <Grid item xs={12}>
-      <Grid container>
+    <Box>
+      <Box>
         {/* Social Media Icons */}
         <IconButton
           aria-label="GitHub"
@@ -113,14 +113,14 @@ const SocialLinks = () => {
         >
           <TwitterIcon />
         </IconButton>
-      </Grid>
-    </Grid>
+      </Box>
+    </Box>
   );
 };
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <Grid item xs={12}>
+    <Grid item xs={12} marginBottom={4} marginTop={4}>
       <Typography variant="h4" gutterBottom>
         Skills
       </Typography>
@@ -143,7 +143,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
 
 const Projects: React.FC<ProjectsProps> = ({ projects }) => {
   return (
-    <Grid item xs={12}>
+    <Grid item xs={12} marginTop={4}>
       <Typography variant="h4" gutterBottom>
         Projects
       </Typography>
@@ -188,10 +188,10 @@ const Home = () => {
   };
 
   return (
-    <Grid container spacing={4}>
+    <Box>
       {/* Under Development Banner */}
       {showUnderDevelopment && (
-        <Grid item xs={12}>
+        <Box>
           <Box
             sx={{
               backgroundColor: '#dd1406',
@@ -209,7 +209,7 @@ const Home = () => {
               <CloseIcon />
             </IconButton>
           </Box>
-        </Grid>
+        </Box>
       )}
 
       {/* Profile Component */}
@@ -219,7 +219,7 @@ const Home = () => {
       <Skills skills={skills} />
       {/* Projects Component */}
       <Projects projects={projects} />
-    </Grid>
+    </Box>
   );
 };
 
