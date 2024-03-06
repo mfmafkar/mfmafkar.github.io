@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 
 const SocialLinks = () => {
   return (
-    <Box>
+    <Box display="flex" justifyContent="center">
       <Box>
         {/* Social Media Icons */}
         <IconButton

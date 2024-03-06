@@ -1,45 +1,39 @@
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Grid } from '@mui/material';
 import SocialLinks from './SocialLinks';
 
-// TODO :: this component is not responsive ...
 const Profile = () => {
   return (
-    <Box>
+    <Grid>
       {/* Profile Picture */}
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Box>
+      <Grid item xs={12} md={6}>
+        <Box display="flex" justifyContent="center">
           <img
             src="https://avatars.githubusercontent.com/u/35808593?v=4"
             alt="Profile"
             width={250}
             height={250}
-            style={{ borderRadius: '300%', overflow: 'hidden' }}
+            style={{ borderRadius: '50%', overflow: 'hidden' }}
           />
         </Box>
+      </Grid>
 
-        <Box>
-          {/* Name and Title */}
-          <Typography variant="h3" gutterBottom>
-            Afkar Fasehudeen
-          </Typography>
-          <Typography variant="h4" gutterBottom>
-            Software Engineer
-          </Typography>
-          {/* Social Links Component */}
-          <SocialLinks />
+      <Grid item xs={12} md={6}>
+        {/* Name and Title */}
+        <Typography variant="h3" gutterBottom align="center">
+          Afkar Fasehudeen
+        </Typography>
+        <Typography variant="h4" gutterBottom align="center">
+          Software Engineer
+        </Typography>
+        {/* Social Links Component */}
 
-          {/* Contact Button Component */}
-          {/* <ContactButton /> */}
-        </Box>
-      </Box>
-      <Typography variant="body1" paragraph>
+        <SocialLinks />
+        {/* Contact Button Component */}
+        {/* <ContactButton /> */}
+      </Grid>
+
+
+      <Typography variant="body1" paragraph align="center">
         Hello! I'm a full-stack developer passionate about building scalable,
         performance-oriented cloud applications and infrastructure. I believe in
         continuous learning and failing fast which has helped me quickly adapt
@@ -49,7 +43,7 @@ const Profile = () => {
         to design, development, and finally production. Having worked with agile
         software teams I am both results-oriented and delivery minded.
       </Typography>
-    </Box>
+    </Grid>
   );
 };
 
