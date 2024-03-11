@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
+import Blogs from './Blogs';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
@@ -26,9 +27,48 @@ const Home = () => {
     { title: 'Project 3', description: 'Description of Project 3' },
   ];
 
+  const blogs = [
+    {
+      title: 'Building a Serverless API with AWS Lambda and Node.js',
+      description:
+        'Learn how to create a serverless API using AWS Lambda and Node.js, and deploy it using AWS API Gateway.',
+      link: 'https://example.com/serverless-api-aws-lambda-nodejs',
+    },
+    {
+      title: 'Deploying a React App to AWS S3 and CloudFront',
+      description:
+        'Step-by-step guide on deploying a React application to AWS S3 and using CloudFront as a CDN for optimal performance.',
+      link: 'https://example.com/deploy-react-aws-s3-cloudfront',
+    },
+    {
+      title: 'Creating a RESTful API with Node.js and Express',
+      description:
+        'Learn how to build a RESTful API using Node.js and Express, including handling routes, requests, and responses.',
+      link: 'https://example.com/nodejs-express-rest-api',
+    },
+    {
+      title: 'Introduction to AWS Lambda: Serverless Computing in the Cloud',
+      description:
+        'An overview of AWS Lambda and its benefits, along with practical examples of using Lambda functions for various tasks.',
+      link: 'https://example.com/intro-aws-lambda-serverless',
+    },
+    {
+      title: 'Serverless Architecture: Pros, Cons, and Best Practices',
+      description:
+        'Explore the advantages and challenges of serverless architecture, along with best practices for designing and deploying serverless applications.',
+      link: 'https://example.com/serverless-architecture-pros-cons-best-practices',
+    },
+  ];
+
   const handleCloseBanner = () => {
     setShowUnderDevelopment(false);
   };
+
+  // <<< TODO >>>
+  // 1.Need to add navbar component with LOGO, BLOG, PROJECTS, DARK MODE SWITCHER...
+  // 2.Need to come up with footer components with LOGO, usual footer stuffs
+  // 3.Need to have medium articles/Public git repos...
+  // 4.Implementing show more functionality for projects/blogs sections ...
 
   return (
     // TODO :: banner is not responsive ...
@@ -64,6 +104,9 @@ const Home = () => {
       <Skills skills={skills} />
       {/* Projects Component */}
       <Projects projects={projects} />
+
+      {/* Blogs Component */}
+      <Blogs blogs={blogs} />
     </Box>
   );
 };
