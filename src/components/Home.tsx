@@ -7,13 +7,14 @@ import Projects from './Projects';
 import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
+import logo from '../assets/logo.jpg';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
 
   const skills: Skill[] = [
     { title: 'JavaScript' },
-    { title: 'Typescript' },
+    { title: 'TypeScript' },
     { title: 'Python' },
     { title: 'React' },
     { title: 'Node.js' },
@@ -69,9 +70,7 @@ const Home = () => {
   // 2.Need to come up with footer components with LOGO, usual footer stuffs
   // 3.Need to have medium articles/Public git repos...
   // 4.Implementing show more functionality for projects/blogs sections ...
-
   return (
-    // TODO :: banner is not responsive ...
     <Box>
       {/* Under Development Banner */}
       {showUnderDevelopment && (
@@ -97,16 +96,35 @@ const Home = () => {
         </Box>
       )}
 
+      <img
+        src={logo}
+        alt="Logo"
+        style={{ marginRight: '10px', height: '100px', width: '100px' }}
+      />
       {/* Profile Component */}
       <Profile />
 
       {/* Skills Component */}
       <Skills skills={skills} />
+
       {/* Projects Component */}
       <Projects projects={projects} />
 
       {/* Blogs Component */}
       <Blogs blogs={blogs} />
+
+      {/* Footer */}
+      <Box
+        sx={{
+          mt: 3,
+          py: 3,
+        }}
+      >
+        <Typography variant="body2" align="center">
+          &copy; {new Date().getFullYear()} Afkar Fasehudeen
+        </Typography>
+        {/* Add more footer content here */}
+      </Box>
     </Box>
   );
 };
