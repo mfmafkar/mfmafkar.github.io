@@ -22,10 +22,11 @@ const Home = () => {
     { title: 'AWS' },
   ];
 
+  // TODO ::: need to add technology stack property to project type...
   const projects: Project[] = [
-    { title: 'Project 1', description: 'Description of Project 1' },
-    { title: 'Project 2', description: 'Description of Project 2' },
-    { title: 'Project 3', description: 'Description of Project 3' },
+    { title: 'Auction Service', description: 'Description of Project 1' },
+    { title: 'EweShare', description: 'Description of Project 2' },
+    { title: 'Gold Trends', description: 'Description of Project 3' },
   ];
 
   const blogs = [
