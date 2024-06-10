@@ -7,7 +7,6 @@ import Projects from './Projects';
 import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
-import logo from '../assets/logo.jpg';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
@@ -22,43 +21,43 @@ const Home = () => {
     { title: 'AWS' },
   ];
 
-  // TODO ::: need to add technology stack property to project type...
   const projects: Project[] = [
-    { title: 'Auction Service', description: 'Description of Project 1' },
-    { title: 'EweShare', description: 'Description of Project 2' },
-    { title: 'Gold Trends', description: 'Description of Project 3' },
+    {
+      title: 'Auction Service',
+      description:
+        'Developed a robust auction service leveraging serverless architecture and AWS technologies. This project aimed to provide a scalable and reliable platform for conducting auctions seamlessly.',
+      skills: [
+        'Node.js',
+        'Serverless',
+        'AWS',
+        'Dynamo DB',
+        'API Gateway',
+        'AWS SES',
+        'AWS Event Bridge',
+        'AWS SQS',
+        'Amazon S3',
+      ],
+    },
+    {
+      title: 'EweShare',
+      description:
+        'Ewe share is an IOT device which comes with a cross platform mobile application, which was made targeting home electric car charge hosts and electric car owners.',
+      skills: ['Arduino', 'Firebase', 'Flask', 'Ionic3', 'Heroku', 'MySQL'],
+    },
+    {
+      title: 'Gold Trends',
+      description:
+        'Gold Trends is forecast system that is capable of forecasting future gold price, which was done based on a novel approach where multivariate input variables like major stock market indices and crude oil prices that correlates with gold price considered as predictor variables for target variable gold price. Multivariate time series forecasting was done with the use deep learning approach.',
+      skills: ['Keras', 'TensorFlow', 'Python', 'Flask', 'PlotyJS', 'HTML', 'CSS', 'JavaScript'],
+    },
   ];
 
   const blogs = [
     {
-      title: 'Building a Serverless API with AWS Lambda and Node.js',
+      title: 'Getting Started with OpenSearch: A Comprehensive Guide',
       description:
-        'Learn how to create a serverless API using AWS Lambda and Node.js, and deploy it using AWS API Gateway.',
-      link: 'https://example.com/serverless-api-aws-lambda-nodejs',
-    },
-    {
-      title: 'Deploying a React App to AWS S3 and CloudFront',
-      description:
-        'Step-by-step guide on deploying a React application to AWS S3 and using CloudFront as a CDN for optimal performance.',
-      link: 'https://example.com/deploy-react-aws-s3-cloudfront',
-    },
-    {
-      title: 'Creating a RESTful API with Node.js and Express',
-      description:
-        'Learn how to build a RESTful API using Node.js and Express, including handling routes, requests, and responses.',
-      link: 'https://example.com/nodejs-express-rest-api',
-    },
-    {
-      title: 'Introduction to AWS Lambda: Serverless Computing in the Cloud',
-      description:
-        'An overview of AWS Lambda and its benefits, along with practical examples of using Lambda functions for various tasks.',
-      link: 'https://example.com/intro-aws-lambda-serverless',
-    },
-    {
-      title: 'Serverless Architecture: Pros, Cons, and Best Practices',
-      description:
-        'Explore the advantages and challenges of serverless architecture, along with best practices for designing and deploying serverless applications.',
-      link: 'https://example.com/serverless-architecture-pros-cons-best-practices',
+        'OpenSearch is a distributed and RESTful search and analytics engine. It is a fork of Elasticsearch and was created after AWS announced that they would no longer be contributing to Elasticsearch.',
+      link: 'https://medium.com/@mfmafkar/getting-started-with-opensearch-a-comprehensive-guide-eeda11c925cb',
     },
   ];
 
@@ -97,11 +96,6 @@ const Home = () => {
         </Box>
       )}
 
-      <img
-        src={logo}
-        alt="Logo"
-        style={{ marginRight: '10px', height: '100px', width: '100px' }}
-      />
       {/* Profile Component */}
       <Profile />
 

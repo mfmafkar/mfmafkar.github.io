@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Typography, Card, CardContent } from '@mui/material';
+import { Grid, Typography, Card, CardContent, Chip, Box } from '@mui/material';
 import Project from '../types/ProjectType';
 
 type ProjectsProps = {
@@ -19,7 +19,19 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
             <Card>
               <CardContent>
                 <Typography variant="h6">{project.title}</Typography>
-                <Typography variant="body2">{project.description}</Typography>
+                <Typography variant="body2" paragraph>
+                  {project.description}
+                </Typography>
+                <Box marginTop={2}>
+                  {project.skills.map((skill, skillIndex) => (
+                    <Chip
+                      key={skillIndex}
+                      label={skill}
+                      variant="outlined"
+                      style={{ marginRight: 4, marginBottom: 4 }}
+                    />
+                  ))}
+                </Box>
               </CardContent>
             </Card>
           </Grid>
