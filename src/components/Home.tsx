@@ -7,6 +7,7 @@ import Projects from './Projects';
 import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
+import WorkExperience from './WorkExperience';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
@@ -48,7 +49,16 @@ const Home = () => {
       title: 'Gold Trends',
       description:
         'Gold Trends is forecast system that is capable of forecasting future gold price, which was done based on a novel approach where multivariate input variables like major stock market indices and crude oil prices that correlates with gold price considered as predictor variables for target variable gold price. Multivariate time series forecasting was done with the use deep learning approach.',
-      skills: ['Keras', 'TensorFlow', 'Python', 'Flask', 'PlotyJS', 'HTML', 'CSS', 'JavaScript'],
+      skills: [
+        'Keras',
+        'TensorFlow',
+        'Python',
+        'Flask',
+        'PlotyJS',
+        'HTML',
+        'CSS',
+        'JavaScript',
+      ],
     },
   ];
 
@@ -58,6 +68,51 @@ const Home = () => {
       description:
         'OpenSearch is a distributed and RESTful search and analytics engine. It is a fork of Elasticsearch and was created after AWS announced that they would no longer be contributing to Elasticsearch.',
       link: 'https://medium.com/@mfmafkar/getting-started-with-opensearch-a-comprehensive-guide-eeda11c925cb',
+    },
+  ];
+
+  const experiences = [
+    {
+      company: 'Wiley',
+      role: 'Software Engineer',
+      tenure: 'July 2021 to Present (2 years and 11 months)',
+      description:
+        'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
+      technologies: [
+        'Typescript',
+        'JavaScript',
+        'React JS',
+        'MobX',
+        'Apollo client',
+        'Material UI',
+        'Node.js',
+        'GraphQL',
+        'AWS Lambda',
+        'AWS Step Functions',
+        'Amazon S3',
+        'Amazon DynamoDB',
+        'AWS AppSync',
+        'Amazon OpenSearch',
+        'Cloudflare worker',
+        'Serverless framework',
+        'GitLab CI',
+      ],
+    },
+    {
+      company: 'Salpo Technologies (PVT) LTD',
+      role: 'Trainee Software Engineer',
+      tenure: 'July 2019 to July 2020 (1 year)',
+      description:
+        'Salpo is a UK based company which builds custom software platforms and mobile apps to help businesses grow and solve critical organizational problems.',
+      technologies: [
+        'React-Native',
+        'React',
+        'Redux',
+        'Laravel',
+        'PostgreSQL',
+        'SQLite',
+        'Node.js',
+      ],
     },
   ];
 
@@ -74,25 +129,29 @@ const Home = () => {
     <Box>
       {/* Under Development Banner */}
       {showUnderDevelopment && (
-        <Box>
-          <Box
-            sx={{
-              backgroundColor: '#dd1406',
-              color: '#fff',
-              padding: '10px',
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              width: '100%',
-            }}
-          >
-            <Typography variant="body1">
-              This site is currently under development.
-            </Typography>
-            <IconButton aria-label="Close" onClick={handleCloseBanner}>
-              <CloseIcon />
-            </IconButton>
-          </Box>
+        <Box
+          sx={{
+            backgroundColor: '#dd1406',
+            color: '#fff',
+            padding: '10px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%',
+            boxSizing: 'border-box',
+            overflow: 'hidden',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            zIndex: 1000,
+          }}
+        >
+          <Typography variant="body1">
+            This site is currently under development.
+          </Typography>
+          <IconButton aria-label="Close" onClick={handleCloseBanner}>
+            <CloseIcon />
+          </IconButton>
         </Box>
       )}
 
@@ -101,6 +160,9 @@ const Home = () => {
 
       {/* Skills Component */}
       <Skills skills={skills} />
+
+      {/* Work Experience Component */}
+      <WorkExperience experiences={experiences} />
 
       {/* Projects Component */}
       <Projects projects={projects} />
