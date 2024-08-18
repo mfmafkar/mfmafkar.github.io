@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Box, Typography, IconButton } from '@mui/material';
+import Stack from '@mui/material/Stack';
 import CloseIcon from '@mui/icons-material/Close';
 import Profile from './Profile';
 import Skills from './Skills';
@@ -75,7 +76,7 @@ const Home = () => {
     {
       company: 'Wiley',
       role: 'Software Engineer',
-      tenure: 'July 2021 to Present (2 years and 11 months)',
+      tenure: 'July 2021 to Present (3 years and 2 months)',
       description:
         'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
       technologies: [
@@ -120,11 +121,6 @@ const Home = () => {
     setShowUnderDevelopment(false);
   };
 
-  // <<< TODO >>>
-  // 1.Need to add navbar component with LOGO, BLOG, PROJECTS, DARK MODE SWITCHER...
-  // 2.Need to come up with footer components with LOGO, usual footer stuffs
-  // 3.Need to have medium articles/Public git repos...
-  // 4.Implementing show more functionality for projects/blogs sections ...
   return (
     <Box>
       {/* Under Development Banner */}
@@ -155,25 +151,19 @@ const Home = () => {
         </Box>
       )}
 
-      {/* Profile Component */}
-      <Profile />
-
-      {/* Skills Component */}
-      <Skills skills={skills} />
-
-      {/* Work Experience Component */}
-      <WorkExperience experiences={experiences} />
-
-      {/* Projects Component */}
-      <Projects projects={projects} />
-
-      {/* Blogs Component */}
-      <Blogs blogs={blogs} />
+      {/* Content Stack */}
+      <Stack spacing={10}>
+        <Profile />
+        <Skills skills={skills} />
+        <Projects projects={projects} />
+        <Blogs blogs={blogs} />
+        <WorkExperience experiences={experiences} />
+      </Stack>
 
       {/* Footer */}
       <Box
         sx={{
-          mt: 3,
+          mt: 8,
           py: 3,
         }}
       >

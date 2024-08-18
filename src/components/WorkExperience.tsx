@@ -20,7 +20,7 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ experiences }) => {
             <Card elevation={3}>
               <CardContent>
                 <Box display="flex" alignItems="center" mb={1}>
-                  <WorkIcon color="primary" />
+                  <WorkIcon />
                   <Typography variant="h5" component="div" sx={{ ml: 1 }}>
                     {experience.company}
                   </Typography>
