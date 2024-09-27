@@ -18,17 +18,17 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) => {
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card>
               <CardContent>
-                <Typography variant="h6">{blog.title}</Typography>
-                <Typography variant="body2">{blog.description}</Typography>
-
                 <Link
                   href={blog.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ textDecoration: 'none' }}
                 >
-                  Read more
+                  <Typography variant="h6" color="primary">
+                    {blog.title}
+                  </Typography>
                 </Link>
+                <Typography variant="body2">{blog.description}</Typography>
               </CardContent>
             </Card>
           </Grid>
