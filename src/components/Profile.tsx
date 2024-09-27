@@ -32,16 +32,19 @@ const Profile = () => {
         {/* <ContactButton /> */}
       </Grid>
 
-
       <Typography variant="body1" paragraph align="center">
-        Hello! I'm a full-stack developer passionate about building scalable,
-        performance-oriented cloud applications and infrastructure. I believe in
-        continuous learning and failing fast which has helped me quickly adapt
-        to new technologies and engineering environments. Having over 3 years of
-        experience in the design and development of cloud solutions together
-        with a strong passion to learn helps me in driving ideas from discovery,
-        to design, development, and finally production. Having worked with agile
-        software teams I am both results-oriented and delivery minded.
+        Hello! I’m a passionate full-stack software engineer with over four
+        years of experience in developing software applications. My expertise
+        lies in Node.js and React, complemented by a solid foundation in AWS
+        cloud technologies and serverless architectures. I thrive on tackling
+        new challenges and continuously seek opportunities to expand my
+        technical knowledge and skill set. My approach to engineering is rooted
+        in continuous learning and rapid adaptation, which has enabled me to
+        quickly integrate new technologies and deliver innovative solutions. I
+        excel in driving ideas from discovery to production, working effectively
+        within agile teams to ensure results-oriented and timely delivery. I am
+        committed to contributing to organizational success and staying abreast
+        of the latest industry trends.
       </Typography>
     </Grid>
   );

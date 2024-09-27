@@ -65,10 +65,16 @@ const Home = () => {
 
   const blogs = [
     {
-      title: 'Getting Started with OpenSearch: A Comprehensive Guide',
+      title: 'Getting Started with Amazon OpenSearch: A Comprehensive Guide',
       description:
         'OpenSearch is a distributed and RESTful search and analytics engine. It is a fork of Elasticsearch and was created after AWS announced that they would no longer be contributing to Elasticsearch.',
       link: 'https://medium.com/@mfmafkar/getting-started-with-opensearch-a-comprehensive-guide-eeda11c925cb',
+    },
+    {
+      title: 'Seamlessly Migrating Your Amazon OpenSearch Domain',
+      description:
+        'Learn how to seamlessly migrate your Amazon OpenSearch domain to a new domain with this step-by-step guide. This article covers essential migration steps, including snapshots, data restoration, and best practices for a smooth transition.',
+      link: 'https://medium.com/@mfmafkar/seamlessly-migrate-your-amazon-opensearch-domain-26ec15731556',
     },
   ];
 
