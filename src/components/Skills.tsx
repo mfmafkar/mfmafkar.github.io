@@ -5,16 +5,6 @@ import Skill from '../types/SkillType';
 type SkillsProps = {
   skills: Skill[];
 };
-//TODO
-// 1.Adding technical skills ...
-// Technical Skills
-// -Programming languages: JavaScript, Typescript, Java, Python
-// -Frontend development: React JS, Redux, Mobx, Apollo Client, MaterialUI
-// -Backend development: Node JS, GraphQL, Serverless Framework, Flask, Cloudflare worker
-// -Mobile development: React native, Ionic
-// -Database: DynamoDB, My SQL, SQLite, MongoDB, Firebase
-// -AWS Cloud Technologies: AppSync, API Gateway, Lambda, Step Functions, S3, Open Search (Elastic search),Event Bridge
-// -DEV-OPS & CI/CD technologies: GitHub Action, GitLab CI, Docker
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
