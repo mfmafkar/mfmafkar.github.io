@@ -9,9 +9,10 @@ import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
 import WorkExperience from './WorkExperience';
+// import Header from './Header';
 
 const Home = () => {
-  const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
+  const [showUnderDevelopment, setShowUnderDevelopment] = useState(false);
 
   const skills: Skill[] = [
     { title: 'JavaScript' },
@@ -129,6 +130,8 @@ const Home = () => {
 
   return (
     <Box>
+      {/* Header component */}
+      {/* <Header /> */}
       {/* Under Development Banner */}
       {showUnderDevelopment && (
         <Box
@@ -156,7 +159,6 @@ const Home = () => {
           </IconButton>
         </Box>
       )}
-
       {/* Content Stack */}
       <Stack spacing={10}>
         <Profile />
@@ -165,7 +167,6 @@ const Home = () => {
         <Blogs blogs={blogs} />
         <WorkExperience experiences={experiences} />
       </Stack>
-
       {/* Footer */}
       <Box
         sx={{
