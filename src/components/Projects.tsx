@@ -1,5 +1,13 @@
 import React from 'react';
-import { Grid, Typography, Card, CardContent, Chip, Box } from '@mui/material';
+import {
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  Chip,
+  Box,
+  Link,
+} from '@mui/material';
 import Project from '../types/ProjectType';
 
 type ProjectsProps = {
@@ -18,7 +26,14 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
           <Grid item xs={12} sm={6} md={4} key={index}>
             <Card>
               <CardContent>
-                <Typography variant="h6">{project.title}</Typography>
+                <Link
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ textDecoration: 'none' }}
+                >
+                  <Typography variant="h6">{project.title}</Typography>
+                </Link>
                 <Typography variant="body2" paragraph>
                   {project.description}
                 </Typography>

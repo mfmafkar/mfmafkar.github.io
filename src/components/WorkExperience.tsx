@@ -1,5 +1,13 @@
 import React from 'react';
-import { Card, CardContent, Typography, Grid, Chip, Box } from '@mui/material';
+import {
+  Card,
+  CardContent,
+  Typography,
+  Grid,
+  Chip,
+  Box,
+  Link,
+} from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import WorkExperienceType from '../types/WorkExperienceType';
@@ -21,9 +29,17 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ experiences }) => {
               <CardContent>
                 <Box display="flex" alignItems="center" mb={1}>
                   <WorkIcon />
-                  <Typography variant="h5" component="div" sx={{ ml: 1 }}>
-                    {experience.company}
-                  </Typography>
+                  {/*  */}
+                  <Link
+                    href={experience.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ textDecoration: 'none' }}
+                  >
+                    <Typography variant="h5" component="div" sx={{ ml: 1 }}>
+                      {experience.company}
+                    </Typography>
+                  </Link>
                 </Box>
                 <Typography variant="subtitle1" color="text.secondary">
                   {experience.role}

@@ -39,12 +39,14 @@ const Home = () => {
         'AWS SQS',
         'Amazon S3',
       ],
+      link: 'https://github.com/mfmafkar/AuctionService',
     },
     {
       title: 'EweShare',
       description:
         'Ewe share is an IOT device which comes with a cross platform mobile application, which was made targeting home electric car charge hosts and electric car owners.',
       skills: ['Arduino', 'Firebase', 'Flask', 'Ionic3', 'Heroku', 'MySQL'],
+      link: 'https://github.com/mfmafkar/EWeShare',
     },
     {
       title: 'Gold Trends',
@@ -60,6 +62,7 @@ const Home = () => {
         'CSS',
         'JavaScript',
       ],
+      link: 'https://github.com/mfmafkar/GoldTrendsWeb',
     },
   ];
 
@@ -104,6 +107,7 @@ const Home = () => {
         'Serverless framework',
         'GitLab CI',
       ],
+      link: 'https://www.wiley.com/en-sg',
     },
     {
       company: 'Salpo Technologies (PVT) LTD',
@@ -120,6 +124,7 @@ const Home = () => {
         'SQLite',
         'Node.js',
       ],
+      link: 'https://www.linkedin.com/company/paul-lawrence-793109210/',
     },
   ];
 

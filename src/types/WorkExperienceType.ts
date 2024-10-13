@@ -4,6 +4,7 @@ type WorkExperienceType = {
   tenure: string;
   description: string;
   technologies: string[];
+  link: string;
 };
 
 export default WorkExperienceType;
