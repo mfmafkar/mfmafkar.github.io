@@ -79,13 +79,19 @@ const Home = () => {
         'Learn how to seamlessly migrate your Amazon OpenSearch domain to a new domain with this step-by-step guide. This article covers essential migration steps, including snapshots, data restoration, and best practices for a smooth transition.',
       link: 'https://medium.com/@mfmafkar/seamlessly-migrate-your-amazon-opensearch-domain-26ec15731556',
     },
+    {
+      title: 'Getting Started with Cloudflare Workers: A Beginner’s Guide',
+      description:
+        'Kickstart your journey with Cloudflare Workers in this beginner-friendly guide. Learn how to build and deploy serverless applications at the edge, explore real-world use cases, and leverage advanced features for scalable, high-performance solutions.',
+      link: 'https://medium.com/@mfmafkar/getting-started-with-cloudflare-workers-a-beginners-guide-fba41eec327a',
+    },
   ];
 
   const experiences = [
     {
       company: 'Wiley',
       role: 'Software Engineer',
-      tenure: 'July 2021 to Present (3 years and 2 months)',
+      tenure: 'July 2021 to Present (3 years and 5 months)',
       description:
         'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
       technologies: [
