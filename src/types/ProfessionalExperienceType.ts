@@ -1,4 +1,4 @@
-type WorkExperienceType = {
+type ProfessionalExperienceType = {
   company: string;
   role: string;
   tenure: string;
@@ -7,4 +7,4 @@ type WorkExperienceType = {
   link: string;
 };
 
-export default WorkExperienceType;
+export default ProfessionalExperienceType;

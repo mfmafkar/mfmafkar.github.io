@@ -10,17 +10,19 @@ import {
 } from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import WorkExperienceType from '../types/WorkExperienceType';
+import ProfessionalExperienceType from '../types/ProfessionalExperienceType';
 
-interface WorkExperienceProps {
-  experiences: WorkExperienceType[];
+interface ProfessionalExperienceProps {
+  experiences: ProfessionalExperienceType[];
 }
 
-const WorkExperience: React.FC<WorkExperienceProps> = ({ experiences }) => {
+const ProfessionalExperience: React.FC<ProfessionalExperienceProps> = ({
+  experiences,
+}) => {
   return (
     <Box>
       <Typography variant="h4" gutterBottom>
-        Work Experience
+        Professional Experience
       </Typography>
       <Grid container spacing={4}>
         {experiences.map((experience, index) => (
@@ -83,4 +85,4 @@ const WorkExperience: React.FC<WorkExperienceProps> = ({ experiences }) => {
   );
 };
 
-export default WorkExperience;
+export default ProfessionalExperience;

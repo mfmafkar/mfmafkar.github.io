@@ -8,7 +8,7 @@ import Projects from './Projects';
 import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
-import WorkExperience from './WorkExperience';
+import ProfessionalExperience from './ProfessionalExperience';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
@@ -174,7 +174,7 @@ const Home = () => {
         <Skills skills={skills} />
         <Projects projects={projects} />
         <Blogs blogs={blogs} />
-        <WorkExperience experiences={experiences} />
+        <ProfessionalExperience experiences={experiences} />
       </Stack>
 
       {/* Footer */}
