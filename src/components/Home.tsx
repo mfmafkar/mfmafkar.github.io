@@ -144,32 +144,32 @@ const Home = () => {
       {showUnderDevelopment && (
         <Box
           sx={{
-            backgroundColor: '#dd1406',
-            color: '#fff',
+            backgroundColor: '#12354f',
+            color: '#FFFFFF',
             padding: '10px',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            width: '100%',
-            boxSizing: 'border-box',
-            overflow: 'hidden',
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            zIndex: 1000,
+            // width: '100%',
+            // boxSizing: 'border-box',
+            // overflow: 'hidden',
+            // position: 'fixed',
+            // top: 0,
+            // left: 0,
+            // zIndex: 1000,
           }}
         >
           <Typography variant="body1">
             This site is currently under development.
           </Typography>
           <IconButton aria-label="Close" onClick={handleCloseBanner}>
-            <CloseIcon />
+            <CloseIcon sx={{ color: '#FFFFFF' }} />
           </IconButton>
         </Box>
       )}
 
-      {/* Content Stack */}
-      <Stack spacing={10}>
+      {/* Main Content */}
+      <Stack spacing={10} sx={{ backgroundColor: 'background.default' }}>
         <Profile />
         <Skills skills={skills} />
         <Projects projects={projects} />
@@ -178,16 +178,10 @@ const Home = () => {
       </Stack>
 
       {/* Footer */}
-      <Box
-        sx={{
-          mt: 8,
-          py: 3,
-        }}
-      >
+      <Box sx={{ mt: 8, py: 3, backgroundColor: '#12354f', color: '#FFFFFF' }}>
         <Typography variant="body2" align="center">
           &copy; {new Date().getFullYear()} Afkar Fasehudeen
         </Typography>
-        {/* Add more footer content here */}
       </Box>
     </Box>
   );
