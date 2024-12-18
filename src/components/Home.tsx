@@ -169,7 +169,7 @@ const Home = () => {
       )}
 
       {/* Main Content */}
-      <Stack spacing={10} sx={{ backgroundColor: 'background.default' }}>
+      <Stack m={2} spacing={10} sx={{ backgroundColor: 'background.default' }}>
         <Profile />
         <Skills skills={skills} />
         <Projects projects={projects} />
