@@ -91,7 +91,7 @@ const Home = () => {
     {
       company: 'Wiley',
       role: 'Software Engineer',
-      tenure: 'July 2021 to Present (3 years and 5 months)',
+      tenure: 'July 2021 to Present (3 years and 7 months)',
       description:
         'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
       technologies: [
