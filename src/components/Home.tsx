@@ -9,6 +9,7 @@ import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
 import ProfessionalExperience from './ProfessionalExperience';
+import { getTenure } from '../utils/utils';
 
 const Home = () => {
   const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
@@ -91,12 +92,13 @@ const Home = () => {
     {
       company: 'Wiley',
       role: 'Software Engineer',
-      tenure: 'July 2021 to Present (3 years and 7 months)',
+      tenure: `${getTenure('2021-07-01')}`,
       description:
         'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
       technologies: [
         'Typescript',
         'JavaScript',
+        'Python',
         'React JS',
         'MobX',
         'Apollo client',

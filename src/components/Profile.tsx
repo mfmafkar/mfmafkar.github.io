@@ -34,18 +34,18 @@ const Profile = () => {
 
       <Typography variant="body1" paragraph align="center">
         Hello! I’m a passionate full-stack software engineer with over four
-        years of experience in designing and developing software solutions. Have
-        a strong foundation in full-stack development, with expertise in
-        JavaScript, TypeScript, Python, Node.js, and React. My experience
-        extends to cloud technologies, including AWS, and implementing
-        serverless architectures to create scalable and efficient solutions.
-        Throughout the career, have displayed a remarkable ability to quickly
-        adapt to new technologies and provide innovative solutions to intricate
-        problems. I am a highly motivated individual who thrives on new
-        challenges and continually seeks opportunities to expand my technical
-        knowledge and skill set. Committed to contributing to the success of the
-        organization, I am always on the lookout for ways to enhance my
-        performance and stay in touch of the latest industry trends.
+        years of experience in software development. Have a strong foundation in
+        full-stack development, with expertise in JavaScript, TypeScript,
+        Python, Node.js, and React. My experience extends to cloud technologies,
+        including AWS, and implementing serverless architectures to create
+        scalable and efficient solutions. Throughout the career, have displayed
+        a remarkable ability to quickly adapt to new technologies and provide
+        innovative solutions to intricate problems. I am a highly motivated
+        individual who thrives on new challenges and continually seeks
+        opportunities to expand my technical knowledge and skill set. Committed
+        to contributing to the success of the organization, I am always on the
+        lookout for ways to enhance my performance and stay in touch of the
+        latest industry trends.
       </Typography>
     </Grid>
   );
