@@ -90,9 +90,29 @@ const Home = () => {
 
   const experiences = [
     {
+      company: 'Consultancy',
+      role: 'Senior Software Engineer',
+      tenure: `${getTenure('2025-06-01')}`,
+      description:
+        '',
+      technologies: [
+        'Typescript',
+        'Next.js',
+        'AWS CDK',
+        'AWS Lambda',
+        'Node.js', 
+        'AWS',
+        'Serverless',
+        'Fastify',
+        'Docker',
+        'PostgreSQL',
+      ],
+      link: '',
+    },
+    {
       company: 'Wiley',
       role: 'Software Engineer',
-      tenure: `${getTenure('2021-07-01')}`,
+      tenure: 'July 2021 to June 2025 (4 years)',
       description:
         'Wiley is a multinational publishing company that produces books, journals, and other materials in a variety of fields, and provides online education services and digital solutions for individuals and organizations.',
       technologies: [
