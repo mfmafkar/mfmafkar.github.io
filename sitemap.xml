@@ -6,7 +6,8 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://mfmafkar.github.io/</loc>
-    <lastmod>2024-09-30</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
