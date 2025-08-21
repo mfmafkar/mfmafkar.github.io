@@ -357,10 +357,15 @@ const Home = () => {
       >
         <Container maxWidth="lg">
           <Box textAlign="center">
-            <Typography variant="body1" sx={{ fontWeight: 500, mb: 2 }}>
-              Built with ❤️ using React & Material-UI
-            </Typography>
-            <Typography variant="body2" sx={{ opacity: 0.8 }}>
+            <Typography 
+              variant="body2" 
+              sx={{ 
+                color: '#ffffff',
+                fontWeight: 400,
+                fontSize: '1.0rem',
+                textShadow: '0 2px 4px rgba(0,0,0,0.4)'
+              }}
+            >
               &copy; {new Date().getFullYear()} Afkar Fasehudeen. All rights reserved.
             </Typography>
           </Box>

@@ -44,17 +44,17 @@ const ProfessionalExperience: React.FC<ProfessionalExperienceProps> = ({
             Professional Journey
           </Typography>
         </Box>
-        <Typography 
-          variant="h6" 
-          sx={{ 
-            color: 'text.secondary',
-            maxWidth: '600px',
-            mx: 'auto',
-            lineHeight: 1.6,
-          }}
-        >
-          My career progression and professional achievements
-        </Typography>
+                 <Typography 
+           variant="h6" 
+           sx={{ 
+             color: 'text.secondary',
+             maxWidth: '600px',
+             mx: 'auto',
+             lineHeight: 1.6,
+           }}
+         >
+           My professional journey and work experience
+         </Typography>
       </Box>
 
       <Grid container spacing={4}>
