@@ -1,6 +1,9 @@
 import React from 'react';
-import { Grid, Typography, Card, CardContent, Box, Chip } from '@mui/material';
+import { Grid, Typography, Card, CardContent, Box, Chip, Avatar } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
+import StorageIcon from '@mui/icons-material/Storage';
+import CloudIcon from '@mui/icons-material/Cloud';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import Skill from '../types/SkillType';
 
 type SkillsProps = {
@@ -16,22 +19,47 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const mlSkills = ['TensorFlow', 'Keras', 'PlotyJS', 'LangChain', 'OpenAI', 'Sentence Transformers'];
 
   const skillCategories = [
-    { title: 'Frontend', skills: skills.filter(skill => frontendSkills.includes(skill.title)), color: '#3182ce' },
-    { title: 'Backend', skills: skills.filter(skill => backendSkills.includes(skill.title)), color: '#38a169' },
-    { title: 'Cloud & DevOps', skills: skills.filter(skill => cloudSkills.includes(skill.title)), color: '#805ad5' },
-    { title: 'Database', skills: skills.filter(skill => databaseSkills.includes(skill.title)), color: '#d69e2e' },
-    { title: 'AI & Machine Learning', skills: skills.filter(skill => mlSkills.includes(skill.title)), color: '#00b5d8' },
-  ].filter(category => category.skills.length > 0); // Only show categories that have skills
+    { 
+      title: 'Frontend', 
+      skills: skills.filter(skill => frontendSkills.includes(skill.title)), 
+      color: '#3182ce',
+      icon: <CodeIcon />
+    },
+    { 
+      title: 'Backend', 
+      skills: skills.filter(skill => backendSkills.includes(skill.title)), 
+      color: '#38a169',
+      icon: <CodeIcon />
+    },
+    { 
+      title: 'Cloud & DevOps', 
+      skills: skills.filter(skill => cloudSkills.includes(skill.title)), 
+      color: '#805ad5',
+      icon: <CloudIcon />
+    },
+    { 
+      title: 'Database', 
+      skills: skills.filter(skill => databaseSkills.includes(skill.title)), 
+      color: '#d69e2e',
+      icon: <StorageIcon />
+    },
+    { 
+      title: 'AI & ML', 
+      skills: skills.filter(skill => mlSkills.includes(skill.title)), 
+      color: '#00b5d8',
+      icon: <PsychologyIcon />
+    },
+  ].filter(category => category.skills.length > 0);
 
   return (
-    <Box sx={{ py: 2 }}>
-      <Box textAlign="center" mb={6}>
+    <Box sx={{ py: 4 }}>
+      <Box textAlign="center" mb={4}>
         <Typography 
           variant="h2" 
           sx={{ 
-            fontSize: { xs: '2.5rem', md: '3rem' },
+            fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
             fontWeight: 700,
-            mb: 2,
+            mb: 1,
             color: 'primary.main',
           }}
         >
@@ -44,33 +72,38 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
             maxWidth: '600px',
             mx: 'auto',
             lineHeight: 1.6,
+            fontSize: { xs: '1rem', md: '1.1rem' },
           }}
         >
           Technologies and tools I work with to build modern, scalable applications
         </Typography>
       </Box>
 
-      <Grid container spacing={4}>
-        {skillCategories.map((category, categoryIndex) => (
-          <Grid item xs={12} sm={6} lg={4} xl={3} key={category.title}>
+      <Grid container spacing={3}>
+        {skillCategories.map((category) => (
+          <Grid item xs={12} sm={6} lg={4} key={category.title}>
             <Card
               elevation={0}
               sx={{
                 height: '100%',
                 background: 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
                 border: '1px solid #e2e8f0',
-                borderRadius: 3,
+                borderRadius: 2,
                 overflow: 'hidden',
                 position: 'relative',
-                transition: 'all 0.3s ease-in-out',
+                transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                 '&:hover': {
-                  transform: 'translateY(-8px)',
-                  boxShadow: '0 20px 40px rgba(0, 0, 0, 0.1)',
+                  transform: 'translateY(-4px)',
+                  boxShadow: '0 12px 24px rgba(0, 0, 0, 0.08)',
                   '& .category-header': {
-                    background: category.color,
+                    background: `linear-gradient(135deg, ${category.color}, ${category.color}dd)`,
+                  },
+                  '& .category-title': {
+                    color: 'white',
                   },
                   '& .category-icon': {
-                    transform: 'rotate(360deg)',
+                    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                    color: 'white',
                   },
                 },
                 '&::before': {
@@ -79,7 +112,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                   top: 0,
                   left: 0,
                   right: 0,
-                  height: '4px',
+                  height: '3px',
                   background: `linear-gradient(90deg, ${category.color}, ${category.color}cc)`,
                 },
               }}
@@ -87,61 +120,70 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
               <Box
                 className="category-header"
                 sx={{
-                  p: 3,
-                  background: `linear-gradient(135deg, ${category.color}15, ${category.color}05)`,
-                  transition: 'background 0.3s ease',
+                  p: 2.5,
+                  background: `linear-gradient(135deg, ${category.color}08, ${category.color}04)`,
+                  transition: 'all 0.3s ease',
+                  textAlign: 'center',
                 }}
               >
-                <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-                  <Box
-                    className="category-icon"
-                    sx={{
-                      width: 48,
-                      height: 48,
-                      borderRadius: '50%',
-                      background: `linear-gradient(135deg, ${category.color}, ${category.color}cc)`,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      transition: 'transform 0.3s ease',
-                    }}
-                  >
-                    <CodeIcon sx={{ color: 'white', fontSize: '1.5rem' }} />
-                  </Box>
-                </Box>
+                <Avatar
+                  className="category-icon"
+                  sx={{
+                    width: 40,
+                    height: 40,
+                    background: category.color,
+                    color: 'white',
+                    mx: 'auto',
+                    mb: 1.5,
+                    transition: 'all 0.3s ease',
+                    '& .MuiAvatar-fallback': {
+                      fontSize: '1.2rem',
+                    },
+                  }}
+                >
+                  {category.icon}
+                </Avatar>
                 <Typography
+                  className="category-title"
                   variant="h6"
-                  align="center"
                   sx={{
                     fontWeight: 600,
                     color: 'text.primary',
-                    mb: 1,
+                    fontSize: '1.1rem',
+                    transition: 'color 0.3s ease',
                   }}
                 >
                   {category.title}
                 </Typography>
               </Box>
 
-              <CardContent sx={{ p: 3, pt: 0 }}>
-                <Box display="flex" flexDirection="column" gap={1.5}>
-                  {category.skills.map((skill, skillIndex) => (
+              <CardContent sx={{ p: 2.5, pt: 2 }}>
+                <Box 
+                  display="flex" 
+                  flexWrap="wrap" 
+                  gap={1}
+                  sx={{
+                    justifyContent: 'flex-start',
+                  }}
+                >
+                  {category.skills.map((skill) => (
                     <Chip
                       key={skill.title}
                       label={skill.title}
+                      size="small"
                       variant="outlined"
                       sx={{
-                        borderColor: `${category.color}40`,
+                        borderColor: `${category.color}30`,
                         color: category.color,
                         fontWeight: 500,
-                        fontSize: '0.9rem',
-                        height: 36,
+                        fontSize: '0.8rem',
+                        height: 28,
                         '&:hover': {
                           backgroundColor: `${category.color}10`,
                           borderColor: category.color,
-                          transform: 'scale(1.05)',
+                          transform: 'scale(1.02)',
                         },
                         transition: 'all 0.2s ease',
-                        animation: `fadeInUp 0.6s ease-out ${0.1 * (categoryIndex * 4 + skillIndex)}s both`,
                       }}
                     />
                   ))}
@@ -152,26 +194,45 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
         ))}
       </Grid>
 
-      {/* All Skills Display */}
-      <Box mt={6} textAlign="center">
-        <Typography variant="h6" sx={{ mb: 3, color: 'text.secondary' }}>
+      {/* Compact All Skills Display */}
+      <Box mt={4} textAlign="center">
+        <Typography 
+          variant="h6" 
+          sx={{ 
+            mb: 2, 
+            color: 'text.secondary',
+            fontSize: '1.1rem',
+            fontWeight: 500,
+          }}
+        >
           All Technologies
         </Typography>
-        <Box display="flex" flexWrap="wrap" justifyContent="center" gap={2}>
-          {skills.map((skill, index) => (
+        <Box 
+          display="flex" 
+          flexWrap="wrap" 
+          justifyContent="center" 
+          gap={1}
+          sx={{
+            maxWidth: '900px',
+            mx: 'auto',
+          }}
+        >
+          {skills.map((skill) => (
             <Chip
               key={skill.title}
               label={skill.title}
+              size="small"
               sx={{
                 backgroundColor: 'primary.main',
                 color: 'white',
                 fontWeight: 500,
+                fontSize: '0.8rem',
+                height: 28,
                 '&:hover': {
                   backgroundColor: 'primary.dark',
-                  transform: 'translateY(-2px)',
+                  transform: 'translateY(-1px)',
                 },
                 transition: 'all 0.2s ease',
-                animation: `fadeInUp 0.6s ease-out ${0.05 * index}s both`,
               }}
             />
           ))}
