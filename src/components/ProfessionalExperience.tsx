@@ -87,6 +87,12 @@ const ProfessionalExperience: React.FC<ProfessionalExperienceProps> = ({
                     '& .timeline-dot': {
                       transform: 'scale(1.2)',
                     },
+                    '& .tenure-period': {
+                      color: 'white !important',
+                    },
+                    '& .tenure-icon': {
+                      color: 'white !important',
+                    },
                   },
                 '&::before': {
                   content: '""',
@@ -186,16 +192,20 @@ const ProfessionalExperience: React.FC<ProfessionalExperienceProps> = ({
 
                 <Box display="flex" alignItems="center" gap={1}>
                   <CalendarTodayIcon 
+                    className="tenure-icon"
                     sx={{ 
                       fontSize: '1rem', 
-                      color: 'text.secondary',
+                      color: 'primary.main',
+                      transition: 'color 0.3s ease',
                     }} 
                   />
                   <Typography
+                    className="tenure-period"
                     variant="body2"
                     sx={{
-                      color: 'text.secondary',
-                      fontWeight: 500,
+                      color: 'primary.main',
+                      fontWeight: 600,
+                      transition: 'color 0.3s ease',
                     }}
                   >
                     {experience.tenure}

@@ -69,7 +69,7 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) => {
                     '& .blog-title': {
                       color: 'white',
                     },
-                    '& .read-more': {
+                    '& .read-more-link': {
                       transform: 'translateX(8px)',
                     },
                   },
@@ -161,6 +161,7 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) => {
                     href={blog.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="read-more-link"
                     sx={{
                       display: 'flex',
                       alignItems: 'center',
@@ -174,10 +175,10 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) => {
                       },
                     }}
                   >
-                    <span className="read-more" style={{ transition: 'transform 0.2s ease' }}>
+                    <span style={{ transition: 'transform 0.2s ease' }}>
                       Read Article
                     </span>
-                    <LaunchIcon sx={{ fontSize: '1rem', ml: 1 }} />
+                    <LaunchIcon sx={{ fontSize: '1rem', ml: 1, transition: 'transform 0.2s ease' }} />
                   </Link>
                 </Box>
               </CardContent>

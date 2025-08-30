@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Box, Typography, IconButton, Container } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import { useEffect } from 'react';
+import { Box, Typography, Container } from '@mui/material';
 import Profile from './Profile';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -11,7 +10,6 @@ import ProfessionalExperience from './ProfessionalExperience';
 import { getTenure } from '../utils/utils';
 
 const Home = () => {
-  const [showUnderDevelopment, setShowUnderDevelopment] = useState(true);
 
   // Update page title and meta description dynamically for better SEO
   useEffect(() => {
@@ -215,44 +213,9 @@ const Home = () => {
     },
   ];
 
-  const handleCloseBanner = () => {
-    setShowUnderDevelopment(false);
-  };
 
   return (
     <Box sx={{ minHeight: '100vh' }}>
-      {/* Under Development Banner */}
-      {showUnderDevelopment && (
-        <Box
-          sx={{
-            background: 'linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%)',
-            color: '#FFFFFF',
-            py: 2,
-            px: 3,
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            boxShadow: '0 4px 20px rgba(26, 54, 93, 0.25)',
-          }}
-        >
-          <Typography variant="body1" sx={{ fontWeight: 500, color: 'white !important' }}>
-            🚀 This site is currently under development
-          </Typography>
-          <IconButton 
-            aria-label="Close" 
-            onClick={handleCloseBanner}
-            sx={{ 
-              color: '#FFFFFF',
-              '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-              }
-            }}
-          >
-            <CloseIcon />
-          </IconButton>
-        </Box>
-      )}
-
       {/* Hero Section with Gradient Background */}
       <Box
         sx={{
