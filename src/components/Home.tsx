@@ -13,7 +13,7 @@ const Home = () => {
 
   // Update page title and meta description dynamically for better SEO
   useEffect(() => {
-    document.title = 'Afkar Fasehudeen - Software Engineer | Full Stack Developer';
+    document.title = 'Afkar Fasehudeen - Software Engineer | Full Stack Engineer';
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
