@@ -13,36 +13,37 @@ const Home = () => {
 
   // Update page title and meta description dynamically for better SEO
   useEffect(() => {
-    document.title = 'Afkar Fasehudeen - Software Engineer | Full Stack Engineer';
+    document.title = 'Afkar Fasehudeen - Senior Software Engineer | Full Stack Developer';
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 
-        'Afkar Fasehudeen - Experienced Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.'
+        'Afkar Fasehudeen - Senior Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.'
       );
     }
   }, []);
 
   const skills: Skill[] = [
-    // Frontend Technologies
+    // Programming Languages
     { title: 'JavaScript' },
     { title: 'TypeScript' },
+    { title: 'Python' },
+    
+    // Frontend Technologies
     { title: 'React' },
     { title: 'Next.js' },
-    { title: 'Material UI' },
     { title: 'Redux' },
     { title: 'MobX' },
     { title: 'Apollo Client' },
-    
+    { title: 'Material UI' },
     
     // Backend Technologies  
     { title: 'Node.js' },
-    { title: 'Python' },
+    { title: 'GraphQL' },
+    { title: 'Serverless Framework' },
     { title: 'Flask' },
     { title: 'Fastify' },
-    { title: 'GraphQL' },
-
     
     // Cloud & DevOps
     { title: 'AWS' },
@@ -52,33 +53,33 @@ const Home = () => {
     { title: 'AWS AppSync' },
     { title: 'Amazon S3' },
     { title: 'API Gateway' },
-    { title: 'AWS SES' },
-    { title: 'AWS Event Bridge' },
+    { title: 'AWS EventBridge' },
     { title: 'AWS SQS' },
+    { title: 'AWS SES' },
     { title: 'Amazon OpenSearch' },
-    { title: 'Serverless' },
-    { title: 'Serverless Framework' },
     { title: 'Cloudflare Workers' },
     { title: 'Docker' },
-    { title: 'GitLab CI' },
     { title: 'GitHub Actions' },
+    { title: 'GitLab CI' },
     
     // Databases
-    { title: 'PostgreSQL' },
-    { title: 'MongoDB' },
     { title: 'DynamoDB' },
-    { title: 'Amazon DynamoDB' },
-    { title: 'SQLite' },
     { title: 'MySQL' },
+    { title: 'SQLite' },
+    { title: 'MongoDB' },
+    { title: 'PostgreSQL' },
     { title: 'Firebase' },
     
-    // Machine Learning & Data
+    // AI & Machine Learning
     { title: 'TensorFlow' },
     { title: 'Keras' },
-    { title: 'PlotyJS' },
     { title: 'LangChain' },
     { title: 'OpenAI' },
     { title: 'Sentence Transformers' },
+    
+    // AI Coding Tools
+    { title: 'GitHub Copilot' },
+    { title: 'Cursor' },
 
   ];
 
@@ -116,7 +117,7 @@ const Home = () => {
         'TensorFlow',
         'Python',
         'Flask',
-        'PlotyJS',
+        'Plotly.js',
         'HTML',
         'CSS',
         'JavaScript',

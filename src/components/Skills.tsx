@@ -12,13 +12,21 @@ type SkillsProps = {
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   // Group skills by category for better organization based on actual experience
-  const frontendSkills = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Material UI', 'Apollo Client'];
-  const backendSkills = ['Node.js', 'Python', 'Flask', 'Fastify', 'GraphQL'];
-  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS SES', 'AWS Event Bridge', 'AWS SQS', 'Amazon OpenSearch', 'Serverless', 'Serverless Framework', 'Cloudflare Workers', 'Docker', 'GitLab CI', 'GitHub Actions'];
-  const databaseSkills = ['PostgreSQL', 'MongoDB', 'DynamoDB', 'Amazon DynamoDB', 'SQLite', 'MySQL', 'Firebase'];
-  const mlSkills = ['TensorFlow', 'Keras', 'PlotyJS', 'LangChain', 'OpenAI', 'Sentence Transformers'];
+  const programmingLanguages = ['JavaScript', 'TypeScript', 'Python'];
+  const frontendSkills = ['React', 'Next.js', 'Redux', 'MobX', 'Apollo Client', 'Material UI'];
+  const backendSkills = ['Node.js', 'GraphQL', 'Serverless Framework', 'Flask', 'Fastify'];
+  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'GitHub Actions', 'GitLab CI'];
+  const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase'];
+  const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'Sentence Transformers'];
+  const aiToolsSkills = ['GitHub Copilot', 'Cursor'];
 
   const skillCategories = [
+    { 
+      title: 'Programming Languages', 
+      skills: skills.filter(skill => programmingLanguages.includes(skill.title)), 
+      color: '#e53e3e',
+      icon: <CodeIcon />
+    },
     { 
       title: 'Frontend', 
       skills: skills.filter(skill => frontendSkills.includes(skill.title)), 
@@ -47,6 +55,12 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
       title: 'AI & ML', 
       skills: skills.filter(skill => mlSkills.includes(skill.title)), 
       color: '#00b5d8',
+      icon: <PsychologyIcon />
+    },
+    { 
+      title: 'AI Coding Tools', 
+      skills: skills.filter(skill => aiToolsSkills.includes(skill.title)), 
+      color: '#dd6b20',
       icon: <PsychologyIcon />
     },
   ].filter(category => category.skills.length > 0);
