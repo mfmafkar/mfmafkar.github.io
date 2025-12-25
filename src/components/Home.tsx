@@ -149,10 +149,10 @@ const Home = () => {
 
   const experiences = [
     {
-      company: 'Consultancy',
+      company: 'Insighture',
       role: 'Senior Software Engineer',
       tenure: `${getTenure('2025-06-01')}`,
-      description: '',
+      description: 'Insighture is a global technology consulting company with offices in Melbourne and Colombo, specializing in end-to-end product delivery, cloud solutions, DevOps, infrastructure services, and AI/ML.',
       technologies: [
         'Typescript',
         'Next.js',
@@ -165,7 +165,7 @@ const Home = () => {
         'Docker',
         'PostgreSQL',
       ],
-      link: '',
+      link: 'https://www.insighture.com/',
     },
     {
       company: 'Wiley',
