@@ -59,7 +59,7 @@ const ProfessionalExperience: React.FC<ProfessionalExperienceProps> = ({
 
       <Grid container spacing={4}>
         {experiences.map((experience, index) => (
-          <Grid key={index} item xs={12} lg={4}>
+          <Grid key={index} size={{ xs: 12, lg: 4 }}>
             <Card
               elevation={0}
               sx={{

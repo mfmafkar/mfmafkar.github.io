@@ -95,7 +95,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
 
       <Grid container spacing={3}>
         {skillCategories.map((category) => (
-          <Grid item xs={12} sm={6} lg={4} key={category.title}>
+          <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={category.title}>
             <Card
               elevation={0}
               sx={{

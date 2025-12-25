@@ -58,7 +58,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
 
       <Grid container spacing={4}>
         {projects.map((project: Project, index: number) => (
-          <Grid item xs={12} md={4} key={index}>
+          <Grid size={{ xs: 12, md: 4 }} key={index}>
             <Card
               elevation={0}
               sx={{

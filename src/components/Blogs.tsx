@@ -47,7 +47,7 @@ const Blogs: React.FC<BlogsProps> = ({ blogs }) => {
 
       <Grid container spacing={4}>
         {blogs.map((blog: Blog, index: number) => (
-          <Grid item xs={12} md={4} key={index}>
+          <Grid size={{ xs: 12, md: 4 }} key={index}>
             <Card
               elevation={0}
               sx={{

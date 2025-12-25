@@ -5,7 +5,7 @@ const Profile = () => {
   return (
     <Grid container spacing={4} alignItems="center" justifyContent="center">
       {/* Profile Picture */}
-      <Grid item xs={12} md={4} display="flex" justifyContent="center">
+      <Grid size={{ xs: 12, md: 4 }} display="flex" justifyContent="center">
         <Box
           sx={{
             position: 'relative',
@@ -41,7 +41,7 @@ const Profile = () => {
         </Box>
       </Grid>
 
-      <Grid item xs={12} md={8}>
+      <Grid size={{ xs: 12, md: 8 }}>
         <Box textAlign={{ xs: 'center', md: 'left' }}>
           {/* Name and Title */}
           <Typography 
@@ -101,7 +101,7 @@ const Profile = () => {
       </Grid>
 
       {/* Detailed Description - Full Width */}
-      <Grid item xs={12}>
+      <Grid size={{ xs: 12 }}>
         <Box 
           sx={{ 
             mt: { xs: 4, md: 6 },
