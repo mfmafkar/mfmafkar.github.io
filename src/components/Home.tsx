@@ -13,13 +13,13 @@ const Home = () => {
 
   // Update page title and meta description dynamically for better SEO
   useEffect(() => {
-    document.title = 'Afkar Fasehudeen - Senior Software Engineer | Full Stack Developer';
+    document.title = 'Afkar Fasehudeen - Senior Software Engineer | Full Stack Engineer';
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 
-        'Afkar Fasehudeen - Senior Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.'
+        'Afkar Fasehudeen - Experienced Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.'
       );
     }
   }, []);
