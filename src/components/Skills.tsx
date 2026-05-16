@@ -15,10 +15,10 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const programmingLanguages = ['JavaScript', 'TypeScript', 'Python'];
   const frontendSkills = ['React', 'Next.js', 'Redux', 'MobX', 'Apollo Client', 'Material UI'];
   const backendSkills = ['Node.js', 'GraphQL', 'Serverless Framework', 'Flask', 'Fastify'];
-  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'GitHub Actions', 'GitLab CI'];
+  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'GitHub Actions', 'GitLab CI', 'Terraform'];
   const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase'];
   const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'Sentence Transformers'];
-  const aiToolsSkills = ['GitHub Copilot', 'Cursor'];
+  const aiToolsSkills = ['GitHub Copilot', 'Cursor', 'Claude Code'];
 
   const skillCategories = [
     { 

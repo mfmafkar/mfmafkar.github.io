@@ -61,7 +61,8 @@ const Home = () => {
     { title: 'Docker' },
     { title: 'GitHub Actions' },
     { title: 'GitLab CI' },
-    
+    { title: 'Terraform' },
+
     // Databases
     { title: 'DynamoDB' },
     { title: 'MySQL' },
@@ -80,6 +81,7 @@ const Home = () => {
     // AI Coding Tools
     { title: 'GitHub Copilot' },
     { title: 'Cursor' },
+    { title: 'Claude Code' },
 
   ];
 
@@ -164,6 +166,7 @@ const Home = () => {
         'Fastify',
         'Docker',
         'PostgreSQL',
+        'Terraform',
       ],
       link: 'https://www.insighture.com/',
     },
@@ -192,6 +195,7 @@ const Home = () => {
         'Cloudflare worker',
         'Serverless framework',
         'GitLab CI',
+        'Terraform',
       ],
       link: 'https://www.wiley.com/en-sg',
     },
