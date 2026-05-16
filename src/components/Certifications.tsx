@@ -102,7 +102,7 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
                   }}
                 >
                   <CardContent sx={{ p: 2.5 }}>
-                    <Box display="flex" justifyContent="space-between" alignItems="flex-start" mb={1}>
+                    <Box mb={1}>
                       <Chip
                         label={cert.category}
                         size="small"
@@ -114,11 +114,6 @@ const Certifications: React.FC<CertificationsProps> = ({ certifications }) => {
                           fontWeight: 600,
                         }}
                       />
-                      {cert.year && (
-                        <Typography variant="caption" sx={{ color: 'text.secondary', fontWeight: 500 }}>
-                          {cert.year}
-                        </Typography>
-                      )}
                     </Box>
 
                     <Typography
