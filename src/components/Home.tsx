@@ -7,6 +7,8 @@ import Skill from '../types/SkillType';
 import Project from '../types/ProjectType';
 import Blogs from './Blogs';
 import ProfessionalExperience from './ProfessionalExperience';
+import Certifications from './Certifications';
+import CertificationType from '../types/CertificationType';
 import { getTenure } from '../utils/utils';
 
 const Home = () => {
@@ -218,6 +220,64 @@ const Home = () => {
     },
   ];
 
+  const certifications: CertificationType[] = [
+    // Formal Certifications
+    {
+      title: 'Certificate of Completion: Introduction to Agent Skills',
+      issuer: 'Anthropic',
+      year: 'May 2026',
+      category: 'AI/ML',
+      type: 'Certification',
+      link: 'https://verify.skilljar.com/c/77x36by4ihku',
+    },
+    {
+      title: 'HashiCorp Certified: Terraform Associate (004)',
+      issuer: 'HashiCorp',
+      year: 'Apr 2026',
+      category: 'DevOps',
+      type: 'Certification',
+      link: 'https://www.credly.com/badges/ea1003fa-fba9-4740-9fd1-ab39edabb897/',
+    },
+    {
+      title: 'AWS Partner: Technical Accredited',
+      issuer: 'Amazon Web Services',
+      year: 'Sep 2025',
+      category: 'Cloud',
+      type: 'Certification',
+      link: 'https://www.credly.com/badges/d32086cf-e1df-43fa-b1fe-3b57f5df3e69',
+    },
+    // Professional Development
+    {
+      title: 'React – Front to Back Development',
+      issuer: 'Udemy',
+      category: 'Frontend',
+      type: 'Course',
+    },
+    {
+      title: 'Serverless Framework Bootcamp: Node.js, AWS & Microservices',
+      issuer: 'Udemy',
+      category: 'Backend',
+      type: 'Course',
+    },
+    {
+      title: 'AWS Solutions Architect Associate Course',
+      issuer: 'Udemy',
+      category: 'Cloud',
+      type: 'Course',
+    },
+    {
+      title: 'ChatGPT & LangChain – Developer Masterclass',
+      issuer: 'Udemy',
+      category: 'AI/ML',
+      type: 'Course',
+    },
+    {
+      title: 'Terraform – Beginner to Advanced',
+      issuer: 'Udemy',
+      category: 'DevOps',
+      type: 'Course',
+    },
+  ];
 
   return (
     <Box sx={{ minHeight: '100vh' }}>
@@ -299,6 +359,16 @@ const Home = () => {
             <Box sx={{ px: { xs: 2, md: 4 } }}>
               <ProfessionalExperience experiences={experiences} />
             </Box>
+          </Box>
+
+          {/* Certifications Section */}
+          <Box
+            component="section"
+            sx={{
+              '& > *': { animation: 'fadeInUp 0.6s ease-out 0.8s both' },
+            }}
+          >
+            <Certifications certifications={certifications} />
           </Box>
         </Box>
       </Container>
