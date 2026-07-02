@@ -12,16 +12,17 @@ import CertificationType from '../types/CertificationType';
 import { getTenure } from '../utils/utils';
 
 const Home = () => {
-
   // Update page title and meta description dynamically for better SEO
   useEffect(() => {
-    document.title = 'Afkar Fasehudeen - Senior Software Engineer | Full Stack Engineer';
-    
+    document.title =
+      'Afkar Fasehudeen - Senior Software Engineer | Full Stack Engineer';
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 
-        'Afkar Fasehudeen - Experienced Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.'
+      metaDescription.setAttribute(
+        'content',
+        'Afkar Fasehudeen - Experienced Software Engineer with 5+ years expertise in React, Node.js, AWS, Python, AI/ML, and cloud solutions. Building scalable applications with modern technologies.',
       );
     }
   }, []);
@@ -31,7 +32,7 @@ const Home = () => {
     { title: 'JavaScript' },
     { title: 'TypeScript' },
     { title: 'Python' },
-    
+
     // Frontend Technologies
     { title: 'React' },
     { title: 'Next.js' },
@@ -39,14 +40,14 @@ const Home = () => {
     { title: 'MobX' },
     { title: 'Apollo Client' },
     { title: 'Material UI' },
-    
-    // Backend Technologies  
+
+    // Backend Technologies
     { title: 'Node.js' },
     { title: 'GraphQL' },
     { title: 'Serverless Framework' },
     { title: 'Flask' },
     { title: 'Fastify' },
-    
+
     // Cloud & DevOps
     { title: 'AWS' },
     { title: 'AWS Lambda' },
@@ -72,22 +73,42 @@ const Home = () => {
     { title: 'MongoDB' },
     { title: 'PostgreSQL' },
     { title: 'Firebase' },
-    
+
     // AI & Machine Learning
     { title: 'TensorFlow' },
     { title: 'Keras' },
     { title: 'LangChain' },
     { title: 'OpenAI' },
     { title: 'Sentence Transformers' },
-    
+
     // AI Coding Tools
     { title: 'GitHub Copilot' },
     { title: 'Cursor' },
     { title: 'Claude Code' },
-
   ];
 
   const projects: Project[] = [
+    {
+      title: 'Store Admin Portal',
+      description: `Full-stack retail store management system with AI-powered semantic search, dashboard business 
+insights, and role-based access control covering inventory, sales, orders, supplier management, and 
+financial reporting.`,
+      skills: [
+        'Next.js 16',
+        'React 18',
+        'TypeScript',
+        'Material UI',
+        'MongoDB Atlas',
+        'MongoDB Vector Search',
+        'Cloudflare R2',
+        'Cloudflare D1',
+        'NextAuth.js',
+        'HuggingFace Inference API',
+        'Vercel',
+        'Resend',
+      ],
+      link: 'https://github.com/mfmafkar/StoreAdminPortal',
+    },
     {
       title: 'Auction Service',
       description:
@@ -144,7 +165,7 @@ const Home = () => {
       link: 'https://medium.com/@mfmafkar/seamlessly-migrate-your-amazon-opensearch-domain-26ec15731556',
     },
     {
-      title: 'Getting Started with Cloudflare Workers: A Beginner\'s Guide',
+      title: "Getting Started with Cloudflare Workers: A Beginner's Guide",
       description:
         'Kickstart your journey with Cloudflare Workers in this beginner-friendly guide. Learn how to build and deploy serverless applications at the edge, explore real-world use cases, and leverage advanced features for scalable, high-performance solutions.',
       link: 'https://medium.com/@mfmafkar/getting-started-with-cloudflare-workers-a-beginners-guide-fba41eec327a',
@@ -156,7 +177,8 @@ const Home = () => {
       company: 'Insighture',
       role: 'Senior Software Engineer',
       tenure: `${getTenure('2025-06-01')}`,
-      description: 'Insighture is a global technology consulting company with offices in Melbourne and Colombo, specializing in end-to-end product delivery, cloud solutions, DevOps, infrastructure services, and AI/ML.',
+      description:
+        'Insighture is a global technology consulting company with offices in Melbourne and Colombo, specializing in end-to-end product delivery, cloud solutions, DevOps, infrastructure services, and AI/ML.',
       technologies: [
         'Typescript',
         'Next.js',
@@ -296,7 +318,8 @@ const Home = () => {
             left: 0,
             right: 0,
             bottom: 0,
-            background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
+            background:
+              'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
             opacity: 0.3,
           },
         }}
@@ -308,8 +331,13 @@ const Home = () => {
 
       {/* Main Content Sections */}
       <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 } }}>
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: { xs: 8, md: 12 } }}>
-          
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: { xs: 8, md: 12 },
+          }}
+        >
           {/* Skills Section */}
           <Box
             component="section"
@@ -389,22 +417,24 @@ const Home = () => {
             left: 0,
             right: 0,
             height: '1px',
-            background: 'linear-gradient(90deg, transparent, #3182ce, transparent)',
+            background:
+              'linear-gradient(90deg, transparent, #3182ce, transparent)',
           },
         }}
       >
         <Container maxWidth="lg">
           <Box textAlign="center">
-            <Typography 
-              variant="body2" 
-              sx={{ 
+            <Typography
+              variant="body2"
+              sx={{
                 color: '#ffffff',
                 fontWeight: 400,
                 fontSize: '1.0rem',
-                textShadow: '0 2px 4px rgba(0,0,0,0.4)'
+                textShadow: '0 2px 4px rgba(0,0,0,0.4)',
               }}
             >
-              &copy; {new Date().getFullYear()} Afkar Fasehudeen. All rights reserved.
+              &copy; {new Date().getFullYear()} Afkar Fasehudeen. All rights
+              reserved.
             </Typography>
           </Box>
         </Container>
