@@ -17,7 +17,8 @@ const Profile = () => {
               right: -8,
               bottom: -8,
               borderRadius: '50%',
-              background: 'linear-gradient(45deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1))',
+              background:
+                'linear-gradient(45deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1))',
               zIndex: 0,
             },
           }}
@@ -44,9 +45,9 @@ const Profile = () => {
       <Grid size={{ xs: 12, md: 8 }}>
         <Box textAlign={{ xs: 'center', md: 'left' }}>
           {/* Name and Title */}
-          <Typography 
-            variant="h1" 
-            sx={{ 
+          <Typography
+            variant="h1"
+            sx={{
               fontSize: { xs: '2.5rem', md: '3.5rem' },
               fontWeight: 700,
               mb: 1,
@@ -58,10 +59,10 @@ const Profile = () => {
           >
             Afkar Fasehudeen
           </Typography>
-          
-          <Typography 
-            variant="h4" 
-            sx={{ 
+
+          <Typography
+            variant="h4"
+            sx={{
               fontSize: { xs: '1.5rem', md: '2rem' },
               fontWeight: 500,
               mb: 3,
@@ -72,8 +73,8 @@ const Profile = () => {
           </Typography>
 
           {/* Social Links */}
-          <Box 
-            sx={{ 
+          <Box
+            sx={{
               mb: 4,
               display: 'flex',
               justifyContent: { xs: 'center', md: 'flex-start' },
@@ -84,9 +85,9 @@ const Profile = () => {
           </Box>
 
           {/* Brief Description */}
-          <Typography 
-            variant="h6" 
-            sx={{ 
+          <Typography
+            variant="h6"
+            sx={{
               fontSize: { xs: '1.1rem', md: '1.25rem' },
               fontWeight: 400,
               lineHeight: 1.6,
@@ -95,15 +96,17 @@ const Profile = () => {
               mx: { xs: 'auto', md: 0 },
             }}
           >
-            Passionate full-stack engineer with 5+ years of experience building scalable web applications and cloud solutions.
+            Full-stack engineer with 5+ years of experience focused on building
+            production-ready AI products, scalable web applications, and
+            cloud-native systems.
           </Typography>
         </Box>
       </Grid>
 
       {/* Detailed Description - Full Width */}
       <Grid size={{ xs: 12 }}>
-        <Box 
-          sx={{ 
+        <Box
+          sx={{
             mt: { xs: 4, md: 6 },
             p: { xs: 3, md: 4 },
             borderRadius: 3,
@@ -113,9 +116,9 @@ const Profile = () => {
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.1)',
           }}
         >
-          <Typography 
-            variant="body1" 
-            sx={{ 
+          <Typography
+            variant="body1"
+            sx={{
               fontSize: '1.1rem',
               lineHeight: 1.7,
               textAlign: 'center',
@@ -123,11 +126,17 @@ const Profile = () => {
               fontWeight: 400,
             }}
           >
-            I'm a passionate full-stack software engineer with over five years of experience in software development. 
-            I have a strong foundation in full-stack development, with expertise in JavaScript, TypeScript, Python, Node.js, and React. 
-            My experience extends to cloud technologies, including AWS, and implementing serverless architectures to create scalable and efficient solutions. 
-            Throughout my career, I have displayed a remarkable ability to quickly adapt to new technologies and provide innovative solutions to complex problems. 
-            I am a highly motivated individual who thrives on new challenges and continually seeks opportunities to expand my technical knowledge and skill set.
+            I'm a passionate full-stack software engineer with over five years
+            of experience in software development. I have a strong foundation in
+            full-stack development, with expertise in JavaScript, TypeScript,
+            Python, Node.js, and React. My experience extends to cloud
+            technologies, including AWS, and implementing serverless
+            architectures to create scalable and efficient solutions. Throughout
+            my career, I have displayed a remarkable ability to quickly adapt to
+            new technologies and provide innovative solutions to complex
+            problems. I am a highly motivated individual who thrives on new
+            challenges and continually seeks opportunities to expand my
+            technical knowledge and skill set.
           </Typography>
         </Box>
       </Grid>

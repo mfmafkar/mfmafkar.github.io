@@ -127,13 +127,6 @@ financial reporting.`,
       link: 'https://github.com/mfmafkar/AuctionService',
     },
     {
-      title: 'EweShare',
-      description:
-        'Ewe share is an IOT device which comes with a cross platform mobile application, which was made targeting home electric car charge hosts and electric car owners.',
-      skills: ['Arduino', 'Firebase', 'Flask', 'Ionic3', 'Heroku', 'MySQL'],
-      link: 'https://github.com/mfmafkar/EWeShare',
-    },
-    {
       title: 'Gold Trends',
       description:
         'Gold Trends is forecast system that is capable of forecasting future gold price, which was done based on a novel approach where multivariate input variables like major stock market indices and crude oil prices that correlates with gold price considered as predictor variables for target variable gold price. Multivariate time series forecasting was done with the use deep learning approach.',
@@ -148,6 +141,13 @@ financial reporting.`,
         'JavaScript',
       ],
       link: 'https://github.com/mfmafkar/GoldTrendsWeb',
+    },
+    {
+      title: 'EweShare',
+      description:
+        'Ewe share is an IOT device which comes with a cross platform mobile application, which was made targeting home electric car charge hosts and electric car owners.',
+      skills: ['Arduino', 'Firebase', 'Flask', 'Ionic3', 'Heroku', 'MySQL'],
+      link: 'https://github.com/mfmafkar/EWeShare',
     },
   ];
 
