@@ -180,17 +180,39 @@ financial reporting.`,
       description:
         'Insighture is a global technology consulting company with offices in Melbourne and Colombo, specializing in end-to-end product delivery, cloud solutions, DevOps, infrastructure services, and AI/ML.',
       technologies: [
+        // Languages
         'Typescript',
-        'Next.js',
+        'JavaScript',
+        'Go',
+
+        // Backend Frameworks
+        'Node.js',
+        'Fastify',
+        'Serverless',
+
+        // AWS Technologies
         'AWS CDK',
         'AWS Lambda',
-        'Node.js',
-        'AWS',
-        'Serverless',
-        'Fastify',
-        'Docker',
+        'AWS Event Bridge',
+        'API Gateway',
+        'Amazon ECS',
+
+        // Databases & Infrastructure
+        'DynamoDB',
         'PostgreSQL',
+        'SQLite',
+        'Docker',
         'Terraform',
+        'GitHub Actions',
+        'GitLab CI',
+        'OpenTelemetry',
+        'Grafana',
+        'Playwright',
+
+        // Frontend Frameworks
+        'Next.js',
+        'React',
+        'Electron',
       ],
       link: 'https://www.insighture.com/',
     },
