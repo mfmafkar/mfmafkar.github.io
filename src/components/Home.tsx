@@ -10,6 +10,10 @@ import ProfessionalExperience from './ProfessionalExperience';
 import Certifications from './Certifications';
 import CertificationType from '../types/CertificationType';
 import { getTenure } from '../utils/utils';
+import Navbar from './Navbar';
+import ScrollToTop from './ScrollToTop';
+
+const SECTION_SCROLL_OFFSET = { xs: '72px', md: '80px' };
 
 const Home = () => {
   // Update page title and meta description dynamically for better SEO
@@ -325,8 +329,11 @@ financial reporting.`,
 
   return (
     <Box sx={{ minHeight: '100vh' }}>
+      <Navbar />
+
       {/* Hero Section with Gradient Background */}
       <Box
+        id="home"
         sx={{
           background: 'linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%)',
           color: 'white',
@@ -362,9 +369,10 @@ financial reporting.`,
         >
           {/* Skills Section */}
           <Box
+            id="skills"
             component="section"
             sx={{
-              scroll: 'margin-top: 2rem',
+              scrollMarginTop: SECTION_SCROLL_OFFSET,
               '& > *': { animation: 'fadeInUp 0.6s ease-out' },
             }}
           >
@@ -373,10 +381,12 @@ financial reporting.`,
 
           {/* Projects Section */}
           <Box
+            id="projects"
             component="section"
             sx={{
               py: 4,
               borderRadius: 3,
+              scrollMarginTop: SECTION_SCROLL_OFFSET,
               background: 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
               '& > *': { animation: 'fadeInUp 0.6s ease-out 0.2s both' },
             }}
@@ -388,8 +398,10 @@ financial reporting.`,
 
           {/* Blogs Section */}
           <Box
+            id="blogs"
             component="section"
             sx={{
+              scrollMarginTop: SECTION_SCROLL_OFFSET,
               '& > *': { animation: 'fadeInUp 0.6s ease-out 0.4s both' },
             }}
           >
@@ -398,10 +410,12 @@ financial reporting.`,
 
           {/* Professional Experience Section */}
           <Box
+            id="experience"
             component="section"
             sx={{
               py: 4,
               borderRadius: 3,
+              scrollMarginTop: SECTION_SCROLL_OFFSET,
               background: 'linear-gradient(145deg, #ffffff 0%, #f8fafc 100%)',
               '& > *': { animation: 'fadeInUp 0.6s ease-out 0.6s both' },
             }}
@@ -413,8 +427,10 @@ financial reporting.`,
 
           {/* Certifications Section */}
           <Box
+            id="certifications"
             component="section"
             sx={{
+              scrollMarginTop: SECTION_SCROLL_OFFSET,
               '& > *': { animation: 'fadeInUp 0.6s ease-out 0.8s both' },
             }}
           >
@@ -461,6 +477,8 @@ financial reporting.`,
           </Box>
         </Container>
       </Box>
+
+      <ScrollToTop />
 
       {/* Add custom CSS for animations */}
       <style>
