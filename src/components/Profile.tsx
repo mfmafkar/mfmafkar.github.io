@@ -133,10 +133,10 @@ const Profile = () => {
             technologies, including AWS, and implementing serverless
             architectures to create scalable and efficient solutions. Throughout
             my career, I have displayed a remarkable ability to quickly adapt to
-            new technologies and provide innovative solutions to complex
-            problems. I am a highly motivated individual who thrives on new
-            challenges and continually seeks opportunities to expand my
-            technical knowledge and skill set.
+            new technologies and combine creative thinking with sound
+            engineering to solve complex problems. I am a highly motivated
+            individual who thrives on new challenges and continually seeks
+            opportunities to expand my technical knowledge and skill set.
           </Typography>
         </Box>
       </Grid>
