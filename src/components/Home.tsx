@@ -51,7 +51,6 @@ const Home = () => {
     { title: 'GraphQL' },
     { title: 'Serverless Framework' },
     { title: 'Flask' },
-    { title: 'Fastify' },
 
     // Cloud & DevOps
     { title: 'AWS' },
@@ -192,7 +191,6 @@ financial reporting.`,
 
         // Backend Frameworks
         'Node.js',
-        'Fastify',
         'Serverless',
 
         // AWS Technologies
