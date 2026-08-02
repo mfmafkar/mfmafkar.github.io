@@ -14,7 +14,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   // Group skills by category for better organization based on actual experience
   const programmingLanguages = ['JavaScript', 'TypeScript', 'Python'];
   const frontendSkills = ['React', 'Next.js', 'Redux', 'MobX', 'Apollo Client', 'Material UI'];
-  const backendSkills = ['Node.js', 'GraphQL', 'Serverless Framework', 'Flask', 'Fastify'];
+  const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'Serverless Framework', 'Flask', 'Fastify'];
   const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'GitHub Actions', 'GitLab CI', 'Terraform'];
   const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase'];
   const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'Sentence Transformers'];

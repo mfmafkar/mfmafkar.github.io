@@ -47,6 +47,7 @@ const Home = () => {
 
     // Backend Technologies
     { title: 'Node.js' },
+    { title: 'NestJS' },
     { title: 'GraphQL' },
     { title: 'Serverless Framework' },
     { title: 'Flask' },
