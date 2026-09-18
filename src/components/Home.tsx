@@ -49,12 +49,22 @@ const Home = () => {
     { title: 'Node.js' },
     { title: 'NestJS' },
     { title: 'GraphQL' },
+    { title: 'REST APIs' },
     { title: 'Serverless Framework' },
     { title: 'Flask' },
+    { title: 'JWT' },
+    { title: 'Passport.js' },
+    { title: 'Prisma ORM' },
+    { title: 'BullMQ' },
+    { title: 'Stripe' },
+    { title: 'Stripe Connect' },
+    { title: 'Jest' },
 
     // Cloud & DevOps
     { title: 'AWS' },
     { title: 'AWS Lambda' },
+    { title: 'AWS EC2' },
+    { title: 'AWS RDS' },
     { title: 'AWS CDK' },
     { title: 'AWS Step Functions' },
     { title: 'AWS AppSync' },
@@ -66,6 +76,8 @@ const Home = () => {
     { title: 'Amazon OpenSearch' },
     { title: 'Cloudflare Workers' },
     { title: 'Docker' },
+    { title: 'PM2' },
+    { title: 'GitHub' },
     { title: 'GitHub Actions' },
     { title: 'GitLab CI' },
     { title: 'Terraform' },
@@ -77,18 +89,27 @@ const Home = () => {
     { title: 'MongoDB' },
     { title: 'PostgreSQL' },
     { title: 'Firebase' },
+    { title: 'Redis' },
+    { title: 'Qdrant' },
 
     // AI & Machine Learning
     { title: 'TensorFlow' },
     { title: 'Keras' },
     { title: 'LangChain' },
     { title: 'OpenAI' },
+    { title: 'GPT-5.4' },
+    { title: 'Gemini' },
+    { title: 'Voyage AI' },
     { title: 'Sentence Transformers' },
 
     // AI Coding Tools
     { title: 'GitHub Copilot' },
     { title: 'Cursor' },
     { title: 'Claude Code' },
+
+    // Productivity & Collaboration Tools
+    { title: 'Linear' },
+    { title: 'Miro' },
   ];
 
   const projects: Project[] = [

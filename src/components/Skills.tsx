@@ -14,10 +14,10 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   // Group skills by category for better organization based on actual experience
   const programmingLanguages = ['JavaScript', 'TypeScript', 'Python'];
   const frontendSkills = ['React', 'Next.js', 'Redux', 'MobX', 'Apollo Client', 'Material UI'];
-  const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'Serverless Framework', 'Flask'];
-  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'GitHub Actions', 'GitLab CI', 'Terraform'];
-  const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase'];
-  const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'Sentence Transformers'];
+  const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'REST APIs', 'Serverless Framework', 'Flask', 'JWT', 'Passport.js', 'Prisma ORM', 'BullMQ', 'Stripe', 'Stripe Connect', 'Jest'];
+  const cloudSkills = ['AWS', 'AWS Lambda', 'AWS EC2', 'AWS RDS', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'PM2', 'GitHub', 'GitHub Actions', 'GitLab CI', 'Terraform'];
+  const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase', 'Redis', 'Qdrant'];
+  const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'GPT-5.4', 'Gemini', 'Voyage AI', 'Sentence Transformers'];
   const aiToolsSkills = ['GitHub Copilot', 'Cursor', 'Claude Code'];
 
   const skillCategories = [
