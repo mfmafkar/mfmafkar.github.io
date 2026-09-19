@@ -17,7 +17,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'REST APIs', 'Serverless Framework', 'Flask', 'JWT', 'Passport.js', 'Prisma ORM', 'BullMQ', 'Stripe', 'Stripe Connect', 'Jest'];
   const cloudSkills = ['AWS', 'AWS Lambda', 'AWS EC2', 'AWS RDS', 'AWS CDK', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'PM2', 'GitHub', 'GitHub Actions', 'GitLab CI', 'Terraform'];
   const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase', 'Redis', 'Qdrant'];
-  const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenAI', 'GPT-5.4', 'Gemini', 'Voyage AI', 'Sentence Transformers'];
+  const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenRouter', 'OpenAI', 'GPT-5.4', 'Gemini', 'Voyage AI', 'Sentence Transformers'];
   const aiToolsSkills = ['GitHub Copilot', 'Cursor', 'Claude Code'];
 
   const skillCategories = [
