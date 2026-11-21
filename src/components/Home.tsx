@@ -195,6 +195,12 @@ financial reporting.`,
         'Kickstart your journey with Cloudflare Workers in this beginner-friendly guide. Learn how to build and deploy serverless applications at the edge, explore real-world use cases, and leverage advanced features for scalable, high-performance solutions.',
       link: 'https://medium.com/@mfmafkar/getting-started-with-cloudflare-workers-a-beginners-guide-fba41eec327a',
     },
+    {
+      title: 'Best Practices in CI/CD for Deploying AWS Lambda and Amazon ECS',
+      description:
+        'Explore proven CI/CD best practices for deploying serverless functions on AWS Lambda and containerized workloads on Amazon ECS, covering automated pipelines, safe rollouts, and reliable, repeatable deployments.',
+      link: 'https://medium.com/@mfmafkar/best-practices-in-ci-cd-for-deploying-aws-lambda-and-amazon-ecs-c57d98541ec7',
+    },
   ];
 
   const experiences = [
