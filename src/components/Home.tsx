@@ -205,6 +205,82 @@ financial reporting.`,
 
   const experiences = [
     {
+      company: 'BridgeME Tech',
+      role: 'Senior Software Engineer',
+      tenure: `${getTenure('2026-07-01')}`,
+      description:
+        'BridgeME Technologies LLC is an AI-native software consultancy with offices in the USA (Wyoming) and EU (Sweden). Partnered with founders, executives and growing teams to turn ideas into production-ready products, combining senior engineering with modern AI workflows to move faster, with less risk.',
+      technologies: [
+        // Languages & Backend
+        'Node.js',
+        'NestJS',
+        'TypeScript',
+        'Go',
+        'REST APIs',
+        'JWT',
+        'Passport.js',
+
+        // Databases & Caching
+        'PostgreSQL',
+        'AWS RDS',
+        'Prisma ORM',
+        'Redis',
+        'Amazon ElastiCache',
+        'BullMQ',
+        'Amazon OpenSearch',
+        'Qdrant',
+
+        // AWS & Infrastructure
+        'Docker',
+        'AWS ECS',
+        'AWS Fargate',
+        'AWS ECR',
+        'AWS EC2',
+        'AWS Lambda',
+        'AWS Step Functions',
+        'Amazon S3',
+        'Amazon SQS',
+        'Amazon EventBridge',
+        'AWS IAM',
+        'Amazon VPC',
+        'Terraform',
+        'AWS SAM',
+        'PM2',
+
+        // AI & ML
+        'OpenAI',
+        'GPT-5.4',
+        'Gemini',
+        'Voyage AI',
+        'Amazon Bedrock',
+        'Amazon Rekognition',
+        'Semantic Search',
+        'Visual Search',
+        'Multimodal AI',
+        'Embeddings',
+        'Image Processing',
+        'Perceptual Hashing (pHash)',
+
+        // Integrations
+        'Stripe',
+        'Stripe Connect',
+        'Shippo',
+
+        // Frontend & Mobile
+        'React Native',
+        'Next.js',
+
+        // Testing & Tooling
+        'Jest',
+        'Claude Code',
+        'MCP',
+        'GitHub',
+        'Linear',
+        'Miro',
+      ],
+      link: 'https://bridgeme.tech/',
+    },
+    {
       company: 'Insighture',
       role: 'Senior Software Engineer',
       tenure: `${getTenure('2025-06-01')}`,
