@@ -36,10 +36,12 @@ const Home = () => {
     { title: 'JavaScript' },
     { title: 'TypeScript' },
     { title: 'Python' },
+    { title: 'Go' },
 
     // Frontend Technologies
     { title: 'React' },
     { title: 'Next.js' },
+    { title: 'React Native' },
     { title: 'Redux' },
     { title: 'MobX' },
     { title: 'Apollo Client' },
@@ -58,6 +60,7 @@ const Home = () => {
     { title: 'BullMQ' },
     { title: 'Stripe' },
     { title: 'Stripe Connect' },
+    { title: 'Shippo' },
     { title: 'Jest' },
 
     // Cloud & DevOps
@@ -65,7 +68,14 @@ const Home = () => {
     { title: 'AWS Lambda' },
     { title: 'AWS EC2' },
     { title: 'AWS RDS' },
+    { title: 'AWS ECS' },
+    { title: 'AWS Fargate' },
+    { title: 'AWS ECR' },
+    { title: 'AWS IAM' },
+    { title: 'Amazon VPC' },
+    { title: 'Amazon ElastiCache' },
     { title: 'AWS CDK' },
+    { title: 'AWS SAM' },
     { title: 'AWS Step Functions' },
     { title: 'AWS AppSync' },
     { title: 'Amazon S3' },
@@ -101,11 +111,20 @@ const Home = () => {
     { title: 'Gemini' },
     { title: 'Voyage AI' },
     { title: 'Sentence Transformers' },
+    { title: 'Amazon Bedrock' },
+    { title: 'Amazon Rekognition' },
+    { title: 'Embeddings' },
+    { title: 'Semantic Search' },
+    { title: 'Visual Search' },
+    { title: 'Multimodal AI' },
+    { title: 'Image Processing' },
+    { title: 'Perceptual Hashing (pHash)' },
 
     // AI Coding Tools
     { title: 'GitHub Copilot' },
     { title: 'Cursor' },
     { title: 'Claude Code' },
+    { title: 'MCP' },
 
     // Productivity & Collaboration Tools
     { title: 'Linear' },
