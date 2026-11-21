@@ -4,6 +4,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import StorageIcon from '@mui/icons-material/Storage';
 import CloudIcon from '@mui/icons-material/Cloud';
 import PsychologyIcon from '@mui/icons-material/Psychology';
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 import Skill from '../types/SkillType';
 
 type SkillsProps = {
@@ -14,7 +15,8 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
   // Group skills by category for better organization based on actual experience
   const programmingLanguages = ['JavaScript', 'TypeScript', 'Python', 'Go'];
   const frontendSkills = ['React', 'Next.js', 'React Native','Redux', 'MobX', 'Apollo Client', 'Material UI'];
-  const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'REST APIs', 'Serverless Framework', 'Flask', 'JWT', 'Passport.js', 'Prisma ORM', 'BullMQ', 'Stripe', 'Stripe Connect', 'Shippo', 'Jest'];
+  const backendSkills = ['Node.js', 'NestJS', 'GraphQL', 'REST APIs', 'Serverless Framework', 'Flask', 'JWT', 'Passport.js', 'Prisma ORM', 'BullMQ', 'Jest'];
+  const integrationSkills = ['Stripe', 'Stripe Connect', 'Shippo'];
   const cloudSkills = ['AWS', 'AWS Lambda', 'AWS EC2', 'AWS RDS', 'AWS ECS', 'AWS Fargate', 'AWS ECR', 'AWS IAM', 'Amazon VPC', 'Amazon ElastiCache', 'AWS CDK', 'AWS SAM', 'AWS Step Functions', 'AWS AppSync', 'Amazon S3', 'API Gateway', 'AWS EventBridge', 'AWS SQS', 'AWS SES', 'Amazon OpenSearch', 'Cloudflare Workers', 'Docker', 'PM2', 'GitHub', 'GitHub Actions', 'GitLab CI', 'Terraform'];
   const databaseSkills = ['DynamoDB', 'MySQL', 'SQLite', 'MongoDB', 'PostgreSQL', 'Firebase', 'Redis', 'Qdrant'];
   const mlSkills = ['TensorFlow', 'Keras', 'LangChain', 'OpenRouter', 'OpenAI', 'GPT-5.4', 'Gemini', 'Voyage AI', 'Sentence Transformers', 'Amazon Bedrock', 'Amazon Rekognition', 'Embeddings', 'Semantic Search', 'Visual Search', 'Multimodal AI', 'Image Processing', 'Perceptual Hashing (pHash)'];
@@ -39,8 +41,14 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
       color: '#38a169',
       icon: <CodeIcon />
     },
-    { 
-      title: 'Cloud & DevOps', 
+    {
+      title: 'Integrations',
+      skills: skills.filter(skill => integrationSkills.includes(skill.title)),
+      color: '#d53f8c',
+      icon: <IntegrationInstructionsIcon />
+    },
+    {
+      title: 'Cloud & DevOps',
       skills: skills.filter(skill => cloudSkills.includes(skill.title)), 
       color: '#805ad5',
       icon: <CloudIcon />
