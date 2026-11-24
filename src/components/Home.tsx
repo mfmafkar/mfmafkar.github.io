@@ -302,12 +302,12 @@ financial reporting.`,
     {
       company: 'Insighture',
       role: 'Senior Software Engineer',
-      tenure: `${getTenure('2025-06-01')}`,
+      tenure: 'June 2025 to June 2026 (1 year)',
       description:
         'Insighture is a global technology consulting company with offices in Melbourne and Colombo, specializing in end-to-end product delivery, cloud solutions, DevOps, infrastructure services, and AI/ML.',
       technologies: [
         // Languages
-        'Typescript',
+        'TypeScript',
         'JavaScript',
         'Go',
 
@@ -318,7 +318,7 @@ financial reporting.`,
         // AWS Technologies
         'AWS CDK',
         'AWS Lambda',
-        'AWS Event Bridge',
+        'Amazon EventBridge',
         'API Gateway',
         'Amazon ECS',
 

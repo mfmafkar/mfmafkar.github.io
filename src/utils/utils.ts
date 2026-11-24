@@ -10,7 +10,15 @@ export function getTenure(startDate: string): string {
     months += 12;
   }
 
+  const plural = (n: number, unit: string) => `${n} ${unit}${n === 1 ? '' : 's'}`;
+  const duration =
+    years === 0
+      ? plural(months, 'month')
+      : months === 0
+        ? plural(years, 'year')
+        : `${plural(years, 'year')} and ${plural(months, 'month')}`;
+
   return `${start.toLocaleString('default', {
     month: 'long',
-  })} ${start.getFullYear()} to Present (${years} years and ${months} months)`;
+  })} ${start.getFullYear()} to Present (${duration})`;
 }
